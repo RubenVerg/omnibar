@@ -1,0 +1,63 @@
+{
+	"categories": {
+		"f": {
+			"name": "Function"
+		},
+		"a": {
+			"name": "Monadic operator"
+		},
+		"c": {
+			"name": "Dyadic operator"
+		},
+		"s": {
+			"name": "Syntax"
+		}
+	},
+	"dialects": {
+		"dy": {
+			"name": "Dyalog APL"
+		},
+		"ex": {
+			"name": "Extended Dyalog APL"
+		}
+	},
+	"glyphs": {
+		"⍝": {
+			"name": "Lamp",
+			"meanings": [
+				{
+					"name": "Comment",
+					"description": "Comments everything up to a newline",
+					"category": "s",
+					"dialects": [
+						"dy",
+						"ex"
+					]
+				}
+			]
+		},
+		"∧": {
+			"name": "Up Wedge",
+			"meanings": [
+				{
+					"name": "LCM",
+					"description": "Least common multiple",
+					"category": "f",
+					"dialects": [
+						"dy",
+						"ex"
+					]
+				},
+				{
+					"name": "And",
+					"description": "Logical and",
+					"category": "f",
+					"dialects": [
+						"dy",
+						"ex"
+					]
+				}
+			]
+		}
+	}
+}
