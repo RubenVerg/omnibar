@@ -3,14 +3,26 @@
   import { Table } from '@sveltestrap/sveltestrap';
 </script>
 
-<div class='container my-4'>
+<div class='mx-3 my-4'>
+	<h1>Omnibar</h1>
+
+	<p>
+		Omnibar: the ultimate language toolbar with support for all <abbr title='Is there a dialect not listed? Open a PR or an issue!'>(?)</abbr> APL dialects.
+	</p>
+	
+	<p>
+		<a href='https://github.com/rubenverg/omnibar'><i class='bi bi-github me-2' />GitHub</a>
+	</p>
+
 	<Table>
 		<thead>
-			<th scope='col'>Glyph</th>
-			<th scope='col'>Glyph name</th>
-			<th scope='col'>Meaning name</th>
-			<th scope='col'>Meaning description</th>
-			<th scope='col'>Meaning dialects</th>
+			<tr>
+				<th scope='col'>Glyph</th>
+				<th scope='col'>Glyph name</th>
+				<th scope='col'>Meaning name</th>
+				<th scope='col'>Meaning description</th>
+				<th scope='col'>Meaning dialects</th>
+			</tr>
 		</thead>
 		<tbody>
 			{#each Object.entries(glyphs.glyphs) as [glyph, { name: glyphName, meanings }]}
@@ -28,7 +40,7 @@
 							{description}
 							{#if urls}
 								{#each urls as url}
-									<a class='ms-2' href={url}><i class='bi bi-box-arrow-up-right'></i></a>
+									<a class='ms-2' href={url}><i class='bi bi-box-arrow-up-right' /></a>
 								{/each}
 							{/if}
 						</td>
