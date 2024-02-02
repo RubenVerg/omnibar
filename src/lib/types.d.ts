@@ -1,7 +1,7 @@
 export interface Glyphs {
 	categories: Record<string, Category>;
 	dialects: Record<string, Dialect>;
-	glyphs: Record<string, Glyph>;
+	glyphs: Glyph[];
 }
 
 export interface Category {
@@ -13,6 +13,7 @@ export interface Dialect {
 }
 
 export interface Glyph {
+	glyph: string | [string, string] | [string, null];
 	name: string;
 	meanings: Meaning[];
 }

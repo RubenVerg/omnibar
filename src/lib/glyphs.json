@@ -19,10 +19,14 @@
 		},
 		"ex": {
 			"name": "Extended Dyalog APL"
+		},
+		"of": {
+			"name": "Operators and Functions"
 		}
 	},
-	"glyphs": {
-		"⍝": {
+	"glyphs": [
+		{
+			"glyph": "⍝",
 			"name": "Lamp",
 			"meanings": [
 				{
@@ -36,7 +40,8 @@
 				}
 			]
 		},
-		"∧": {
+		{
+			"glyph": "∧",
 			"name": "Up Wedge",
 			"meanings": [
 				{
@@ -58,6 +63,20 @@
 					]
 				}
 			]
+		},
+		{
+			"glyph": [":¯", null],
+			"name": "Colon Overbar",
+			"meanings": [
+				{
+					"name": "Variant",
+					"category": "c",
+					"dialects": [
+						"of"
+					],
+					"description": "Select a variant (related function)"
+				}
+			]
 		}
-	}
+	]
 }

@@ -25,11 +25,19 @@
 			</tr>
 		</thead>
 		<tbody>
-			{#each Object.entries(glyphs.glyphs) as [glyph, { name: glyphName, meanings }]}
+			{#each glyphs.glyphs as { glyph, name: glyphName, meanings }}
 				{#each meanings.entries() as [idx, { name, description, category, dialects, urls }]}
 					<tr>
 						{#if idx === 0}
-							<th scope='row' rowspan={meanings.length}><code class='overstrike'>{glyph}</code></th>
+							<th scope='row' rowspan={meanings.length}>
+								{#if typeof glyph === 'string'}
+									<code>{glyph}</code>
+								{:else if glyph[1] === null}
+									<code class='overstrike'>{glyph[0]}</code>&nbsp;(no Unicode equivalent)
+								{:else}
+									<code class='overstrike'>{glyph[0]}</code>&nbsp;(closest Unicode equivalent(s): <code>{glyph[1]}</code>)
+								{/if}
+							</th>
 							<td rowspan={meanings.length}>{glyphName}</td>
 						{/if}
 						<td>
