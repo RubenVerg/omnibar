@@ -1737,7 +1737,7 @@
 						"dy"
 					],
 					"urls": [
-						"https://aplwiki.com/wiki/Dfn#Guards"
+						"https://help.dyalog.com/latest/#Language/Defined%20Functions%20and%20Operators/DynamicFunctions/Guards.htm"
 					]
 				},
 				{
@@ -1749,6 +1749,22 @@
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Control_structure"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "::",
+			"name": "Colon Colon",
+			"meanings": [
+				{
+					"name": "Error Guard",
+					"category": "s",
+					"dialects": [
+						"dy"
+					],
+					"urls": [
+						"https://help.dyalog.com/latest/#Language/Defined%20Functions%20and%20Operators/DynamicFunctions/Error%20Guards.htm"
 					]
 				}
 			]
@@ -1836,7 +1852,7 @@
 						"dy"
 					],
 					"urls": [
-						"https://aplwiki.com/wiki/Dfn"
+						"https://help.dyalog.com/latest/#Language/Defined%20Functions%20and%20Operators/DynamicFunctions/Recursion.htm"
 					]
 				}
 			]
@@ -1853,7 +1869,7 @@
 						"dy"
 					],
 					"urls": [
-						"https://aplwiki.com/wiki/Dfn"
+						"https://help.dyalog.com/latest/#Language/Defined%20Functions%20and%20Operators/DynamicFunctions/Recursion.htm"
 					]
 				}
 			]
