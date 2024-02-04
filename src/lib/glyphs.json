@@ -50,6 +50,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Conjugate"
 					]
 				},
 				{
@@ -57,6 +60,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Add"
 					]
 				}
 			]
@@ -70,6 +76,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Negate"
 					]
 				},
 				{
@@ -77,6 +86,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Subtract"
 					]
 				}
 			]
@@ -91,6 +103,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Signum"
 					]
 				},
 				{
@@ -98,6 +113,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Times"
 					]
 				}
 			]
@@ -112,6 +130,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Exponential"
 					]
 				},
 				{
@@ -119,6 +140,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Power_(function)"
 					]
 				}
 			]
@@ -132,6 +156,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Natural_Logarithm"
 					]
 				},
 				{
@@ -139,6 +166,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Logarithm"
 					]
 				}
 			]
@@ -152,6 +182,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Matrix_Inverse"
 					]
 				},
 				{
@@ -159,6 +192,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Matrix_Divide"
 					]
 				}
 			]
@@ -172,6 +208,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Pi_Times"
 					]
 				},
 				{
@@ -180,6 +219,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Circular"
 					]
 				}
 			]
@@ -193,6 +235,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Factorial"
 					]
 				},
 				{
@@ -200,6 +245,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Binomial"
 					]
 				}
 			]
@@ -214,6 +262,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Roll"
 					]
 				},
 				{
@@ -222,6 +273,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Deal"
 					]
 				}
 			]
@@ -235,13 +289,19 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Magnitude"
 					]
 				},
 				{
-					"name": "Modulo",
+					"name": "Residue",
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Residue"
 					]
 				}
 			]
@@ -256,6 +316,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Ceiling"
 					]
 				},
 				{
@@ -264,6 +327,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Maximum"
 					]
 				}
 			]
@@ -278,6 +344,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Floor"
 					]
 				},
 				{
@@ -286,6 +355,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Minimum"
 					]
 				}
 			]
@@ -300,6 +372,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Decode"
 					]
 				}
 			]
@@ -314,6 +389,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Encode"
 					]
 				}
 			]
@@ -328,6 +406,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Identity"
 					]
 				},
 				{
@@ -336,6 +417,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Identity"
 					]
 				}
 			]
@@ -350,6 +434,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Identity"
 					]
 				},
 				{
@@ -358,6 +445,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Identity"
 					]
 				}
 			]
@@ -371,6 +461,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Equal_to"
 					]
 				}
 			]
@@ -384,6 +477,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Not_Equal_to"
 					]
 				},
 				{
@@ -392,6 +488,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Nub_Sieve"
 					]
 				}
 			]
@@ -405,6 +504,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Less_than_or_Equal_to"
 					]
 				}
 			]
@@ -418,6 +520,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Less_than"
 					]
 				}
 			]
@@ -431,6 +536,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Greater_than"
 					]
 				}
 			]
@@ -444,6 +552,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Greater_than_or_Equal_to"
 					]
 				}
 			]
@@ -458,6 +569,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Match"
 					]
 				},
 				{
@@ -466,6 +580,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Depth"
 					]
 				}
 			]
@@ -480,6 +597,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Not_Match"
 					]
 				},
 				{
@@ -488,6 +608,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Tally"
 					]
 				}
 			]
@@ -501,6 +624,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/GCD"
 					]
 				}
 			]
@@ -514,6 +640,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/LCM"
 					]
 				}
 			]
@@ -527,6 +656,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Nor"
 					]
 				}
 			]
@@ -540,6 +672,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Nand"
 					]
 				}
 			]
@@ -554,6 +689,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Mix"
 					]
 				},
 				{
@@ -561,6 +699,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Take"
 					]
 				}
 			]
@@ -575,6 +716,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Split"
 					]
 				},
 				{
@@ -582,6 +726,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Drop"
 					]
 				}
 			]
@@ -596,6 +743,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Enclose"
 					]
 				},
 				{
@@ -604,6 +754,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Partitioned_Enclose"
 					]
 				}
 			]
@@ -618,6 +771,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/First"
 					]
 				},
 				{
@@ -626,6 +782,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Pick"
 					]
 				}
 			]
@@ -640,6 +799,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Nest"
 					]
 				},
 				{
@@ -648,6 +810,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Partition"
 					]
 				}
 			]
@@ -662,6 +827,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Index_(function)"
 					]
 				},
 				{
@@ -670,6 +838,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Materialise"
 					]
 				}
 			]
@@ -684,6 +855,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Grade"
 					]
 				}
 			]
@@ -698,6 +872,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Grade"
 					]
 				}
 			]
@@ -712,6 +889,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Index_Generator"
 					]
 				},
 				{
@@ -719,6 +899,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Index_Of"
 					]
 				}
 			]
@@ -733,6 +916,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Indices"
 					]
 				},
 				{
@@ -741,6 +927,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Interval_Index"
 					]
 				}
 			]
@@ -754,6 +943,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Membership"
 					]
 				},
 				{
@@ -762,6 +954,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Enlist"
 					]
 				}
 			]
@@ -776,6 +971,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Find"
 					]
 				}
 			]
@@ -790,6 +988,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Union"
 					]
 				},
 				{
@@ -798,6 +999,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Unique"
 					]
 				}
 			]
@@ -812,6 +1016,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Intersection"
 					]
 				}
 			]
@@ -825,14 +1032,20 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Not"
 					]
 				},
 				{
-					"name": "Difference",
+					"name": "Without",
 					"description": "All elements of the left argument that don't appear in the right argument",
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Without"
 					]
 				}
 			]
@@ -846,6 +1059,9 @@
 					"category": "a",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Reduce"
 					]
 				},
 				{
@@ -853,6 +1069,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Replicate"
 					]
 				}
 			]
@@ -866,6 +1085,9 @@
 					"category": "a",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Reduce"
 					]
 				},
 				{
@@ -873,6 +1095,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Replicate"
 					]
 				}
 			]
@@ -886,6 +1111,9 @@
 					"category": "a",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Scan"
 					]
 				},
 				{
@@ -893,6 +1121,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Expand"
 					]
 				}
 			]
@@ -906,6 +1137,9 @@
 					"category": "a",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Scan"
 					]
 				},
 				{
@@ -913,6 +1147,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Expand"
 					]
 				}
 			]
@@ -927,6 +1164,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Ravel"
 					]
 				},
 				{
@@ -934,6 +1174,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Catenate"
 					]
 				}
 			]
@@ -948,6 +1191,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Table"
 					]
 				},
 				{
@@ -955,6 +1201,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Catenate"
 					]
 				}
 			]
@@ -968,6 +1217,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Shape"
 					]
 				},
 				{
@@ -975,6 +1227,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Reshape"
 					]
 				}
 			]
@@ -988,6 +1243,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Reverse"
 					]
 				},
 				{
@@ -995,6 +1253,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Rotate"
 					]
 				}
 			]
@@ -1008,6 +1269,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Reverse"
 					]
 				},
 				{
@@ -1015,6 +1279,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Rotate"
 					]
 				}
 			]
@@ -1028,6 +1295,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Transpose"
 					]
 				}
 			]
@@ -1042,6 +1312,9 @@
 					"category": "a",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Each"
 					]
 				}
 			]
@@ -1056,6 +1329,9 @@
 					"category": "a",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Constant"
 					]
 				},
 				{
@@ -1064,6 +1340,9 @@
 					"category": "a",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Commute"
 					]
 				}
 			]
@@ -1078,6 +1357,9 @@
 					"category": "c",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Power_(operator)"
 					]
 				}
 			]
@@ -1092,6 +1374,9 @@
 					"category": "c",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Inner_Product"
 					]
 				}
 			]
@@ -1106,6 +1391,9 @@
 					"category": "a",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Outer_Product"
 					]
 				}
 			]
@@ -1120,6 +1408,9 @@
 					"category": "c",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Beside"
 					]
 				},
 				{
@@ -1128,6 +1419,9 @@
 					"category": "c",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Bind"
 					]
 				}
 			]
@@ -1142,6 +1436,9 @@
 					"category": "c",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Atop_(operator)"
 					]
 				}
 			]
@@ -1156,6 +1453,9 @@
 					"category": "c",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Over"
 					]
 				}
 			]
@@ -1170,6 +1470,9 @@
 					"category": "c",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/At"
 					]
 				}
 			]
@@ -1197,6 +1500,9 @@
 					"category": "s",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Quad_name"
 					]
 				}
 			]
@@ -1231,6 +1537,9 @@
 					"category": "c",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Variant"
 					]
 				}
 			]
@@ -1245,6 +1554,9 @@
 					"category": "a",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Key"
 					]
 				}
 			]
@@ -1259,6 +1571,9 @@
 					"category": "c",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Stencil"
 					]
 				}
 			]
@@ -1273,6 +1588,9 @@
 					"category": "a",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/I-Beam"
 					]
 				}
 			]
@@ -1282,10 +1600,13 @@
 			"name": "Up Tack Jot (Hydrant)",
 			"meanings": [
 				{
-					"name": "Evaluate",
+					"name": "Execute",
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Execute"
 					]
 				}
 			]
@@ -1299,6 +1620,9 @@
 					"category": "f",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Format"
 					]
 				}
 			]
@@ -1313,6 +1637,9 @@
 					"category": "r",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Zilde"
 					]
 				}
 			]
@@ -1327,6 +1654,9 @@
 					"category": "s",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Dfn"
 					]
 				}
 			]
@@ -1340,6 +1670,9 @@
 					"category": "s",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Dfn"
 					]
 				}
 			]
@@ -1353,6 +1686,9 @@
 					"category": "s",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Dfn"
 					]
 				}
 			]
@@ -1366,6 +1702,9 @@
 					"category": "s",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Dfn"
 					]
 				}
 			]
@@ -1379,6 +1718,9 @@
 					"category": "s",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Dfn"
 					]
 				}
 			]
@@ -1393,6 +1735,9 @@
 					"category": "s",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Dfn#Guards"
 					]
 				},
 				{
@@ -1401,6 +1746,9 @@
 					"category": "s",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Control_structure"
 					]
 				}
 			]
@@ -1415,6 +1763,9 @@
 					"category": "s",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Indexing"
 					]
 				},
 				{
@@ -1423,6 +1774,9 @@
 					"category": "s",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Function_axis"
 					]
 				}
 			]
@@ -1437,6 +1791,9 @@
 					"category": "s",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Assignment"
 					]
 				}
 			]
@@ -1450,6 +1807,9 @@
 					"category": "s",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Branch"
 					]
 				}
 			]
@@ -1463,6 +1823,9 @@
 					"category": "s",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Defined_function_(traditional)"
 					]
 				},
 				{
@@ -1471,6 +1834,9 @@
 					"category": "s",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Dfn"
 					]
 				}
 			]
@@ -1485,6 +1851,9 @@
 					"category": "s",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Dfn"
 					]
 				}
 			]
@@ -1499,6 +1868,9 @@
 					"category": "s",
 					"dialects": [
 						"dy"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/High_minus"
 					]
 				}
 			]
