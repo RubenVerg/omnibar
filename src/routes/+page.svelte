@@ -45,7 +45,7 @@
 							{name}
 						</td>
 						<td>
-							{description}
+							{description ?? ''}
 							{#if urls}
 								{#each urls as url}
 									<a class='ms-2' href={url}><i class='bi bi-box-arrow-up-right' /></a>

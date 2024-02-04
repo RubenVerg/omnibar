@@ -11,6 +11,9 @@
 		},
 		"s": {
 			"name": "Syntax"
+		},
+		"r": {
+			"name": "Array"
 		}
 	},
 	"dialects": {
@@ -20,22 +23,484 @@
 		"ex": {
 			"name": "Extended Dyalog APL"
 		},
+		"vi": {
+			"name": "Dyalog APL Vision"
+		},
+		"n2": {
+			"name": "NARS2000"
+		},
+		"dz": {
+			"name": "dzaima/APL"
+		},
+		"di": {
+			"name": "A Dictionary of APL"
+		},
 		"of": {
 			"name": "Operators and Functions"
 		}
 	},
 	"glyphs": [
 		{
-			"glyph": "⍝",
-			"name": "Lamp",
+			"glyph": "+",
+			"name": "Plus",
 			"meanings": [
 				{
-					"name": "Comment",
-					"description": "Comments everything up to a newline",
-					"category": "s",
+					"name": "Conjugate",
+					"description": "Complex conjugate",
+					"category": "f",
 					"dialects": [
-						"dy",
-						"ex"
+						"dy"
+					]
+				},
+				{
+					"name": "Addition",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "-",
+			"name": "Bar",
+			"meanings": [
+				{
+					"name": "Negate",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Subtraction",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "×",
+			"name": "Cross",
+			"meanings": [
+				{
+					"name": "Signum",
+					"description": "Number sign (direction, for complex numbers)",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Multiplication",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "*",
+			"name": "Star",
+			"meanings": [
+				{
+					"name": "Exponential",
+					"description": "Power with Euler's number as the base",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Power",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍟",
+			"name": "Circle Star",
+			"meanings": [
+				{
+					"name": "Natural Logarithm",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Logarithm",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⌹",
+			"name": "Quad Divide",
+			"meanings": [
+				{
+					"name": "Matrix Inverse",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Matrix Divide",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "○",
+			"name": "Circle",
+			"meanings": [
+				{
+					"name": "Pi Times",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Circular",
+					"description": "A range of trigonometric and related functions selected using the left argument",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "!",
+			"name": "Exclamation Mark",
+			"meanings": [
+				{
+					"name": "Factorial",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Binomial Coefficient",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "?",
+			"name": "Question Mark",
+			"meanings": [
+				{
+					"name": "Roll",
+					"description": "Random integer(s) in the range defined by the argument, or random float if the argument is 0",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Deal",
+					"description": "Right argument random selections from the range defined by the left argument",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "|",
+			"name": "Stile",
+			"meanings": [
+				{
+					"name": "Magnitude",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Modulo",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⌈",
+			"name": "Up Stile",
+			"meanings": [
+				{
+					"name": "Ceiling",
+					"description": "The smallest integer greater than or equal to the argument",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Maximum",
+					"description": "The largest argument",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⌊",
+			"name": "Down Stile",
+			"meanings": [
+				{
+					"name": "Floor",
+					"description": "The largest integer less than or equal to the argument",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Minimum",
+					"description": "The smallest argument",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⊥",
+			"name": "Up Tack",
+			"meanings": [
+				{
+					"name": "Decode",
+					"description": "Evaluate the right argument in the base defined by the left argument",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⊤",
+			"name": "Down Tack",
+			"meanings": [
+				{
+					"name": "Encode",
+					"description": "Represent the right argument in the base defined by the left argument",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⊢",
+			"name": "Right Tack",
+			"meanings": [
+				{
+					"name": "Same",
+					"description": "The argument, unchanged",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Right",
+					"description": "The right argument, unchanged",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⊣",
+			"name": "Left Tack",
+			"meanings": [
+				{
+					"name": "Same",
+					"description": "The argument, unchanged",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Left",
+					"description": "The left argument, unchanged",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "=",
+			"name": "Equal",
+			"meanings": [
+				{
+					"name": "Equal To",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "≠",
+			"name": "Equal Slash",
+			"meanings": [
+				{
+					"name": "Not Equal To",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Nub Sieve",
+					"description": "Mask that marks the first occurrence of each major cell",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "≤",
+			"name": "Left Wedge Underbar",
+			"meanings": [
+				{
+					"name": "Less Than or Equal To",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "<",
+			"name": "Left Wedge",
+			"meanings": [
+				{
+					"name": "Less Than",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": ">",
+			"name": "Right Wedge",
+			"meanings": [
+				{
+					"name": "Greater Than",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "≥",
+			"name": "Right Wedge Underbar",
+			"meanings": [
+				{
+					"name": "Greater Than or Equal To",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "≡",
+			"name": "Equal Bar",
+			"meanings": [
+				{
+					"name": "Match",
+					"description": "Compare the whole arrays for equality",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Depth",
+					"description": "Level of boxing",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "≢",
+			"name": "Equal Bar Slash",
+			"meanings": [
+				{
+					"name": "Not Match",
+					"description": "Compare the whole arrays for not equality",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Tally",
+					"description": "The amount of major cells",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "∨",
+			"name": "Down Wedge",
+			"meanings": [
+				{
+					"name": "Greatest Common Divisor",
+					"category": "f",
+					"dialects": [
+						"dy"
 					]
 				}
 			]
@@ -45,36 +510,1038 @@
 			"name": "Up Wedge",
 			"meanings": [
 				{
-					"name": "LCM",
-					"description": "Least common multiple",
+					"name": "Least Common Multiple",
 					"category": "f",
 					"dialects": [
-						"dy",
-						"ex"
-					]
-				},
-				{
-					"name": "And",
-					"description": "Logical and",
-					"category": "f",
-					"dialects": [
-						"dy",
-						"ex"
+						"dy"
 					]
 				}
 			]
 		},
 		{
-			"glyph": [":¯", null],
-			"name": "Colon Overbar",
+			"glyph": "⍱",
+			"name": "Down Wedge Tilde",
+			"meanings": [
+				{
+					"name": "Nor",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍲",
+			"name": "Up Wedge Tilde",
+			"meanings": [
+				{
+					"name": "Nand",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "↑",
+			"name": "Up Arrow",
+			"meanings": [
+				{
+					"name": "Mix",
+					"description": "Combine all elements into a single array",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Take",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "↓",
+			"name": "Down Arrow",
+			"meanings": [
+				{
+					"name": "Split",
+					"description": "Convert an axis to a level of nesting",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Drop",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⊂",
+			"name": "Left Shoe",
+			"meanings": [
+				{
+					"name": "Enclose",
+					"description": "Wrap the argument into a nested scalar",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Partitioned Enclose",
+					"description": "Split the right argument into pieces specified by the left argument",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⊃",
+			"name": "Right Shoe",
+			"meanings": [
+				{
+					"name": "First",
+					"description": "The first element of the argument",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Pick",
+					"description": "Extract a value through layers of nesting",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⊆",
+			"name": "Left Shoe Underbar",
+			"meanings": [
+				{
+					"name": "Nest",
+					"description": "Enclose if simple",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Partition",
+					"description": "Split the right argument into pieces specified by the left argument",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⌷",
+			"name": "Squad",
+			"meanings": [
+				{
+					"name": "Index",
+					"description": "Items of the right argument as specified by the left argument",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Materialise",
+					"description": "Cast the argument to an array",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍋",
+			"name": "Delta Stile",
+			"meanings": [
+				{
+					"name": "Grade Up",
+					"description": "Indices that sort the right argument in ascending order, optionally ordered according to the left argument",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍒",
+			"name": "Del Stile",
+			"meanings": [
+				{
+					"name": "Grade Down",
+					"description": "Indices that sort the right argument in descending order, optionally ordered according to the left argument",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍳",
+			"name": "Iota",
+			"meanings": [
+				{
+					"name": "Index Generator",
+					"description": "Indices with shape specified by the argument",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Index Of",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍸",
+			"name": "Iota Underbar",
+			"meanings": [
+				{
+					"name": "Where",
+					"description": "True indices in the argument mask",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Interval Index",
+					"description": "???",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "∊",
+			"name": "Epsilon",
+			"meanings": [
+				{
+					"name": "Element Of",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Enlist",
+					"description": "All simple elements of the argument, traversing nested entries",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍷",
+			"name": "Epsilon Underbar",
+			"meanings": [
+				{
+					"name": "Find",
+					"description": "Mask of the start corners of the appearances of the left argument in the right argument",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "∪",
+			"name": "Down Shoe",
+			"meanings": [
+				{
+					"name": "Union",
+					"description": "The left argument catenated with the elements of the right argument that don't appear in the left argument",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Unique",
+					"description": "Unique elements",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "∩",
+			"name": "Up Shoe",
+			"meanings": [
+				{
+					"name": "Intersection",
+					"description": "All elements of the left argument that appear in the right argument",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "~",
+			"name": "Tilde",
+			"meanings": [
+				{
+					"name": "Not",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Difference",
+					"description": "All elements of the left argument that don't appear in the right argument",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "/",
+			"name": "Slash",
+			"meanings": [
+				{
+					"name": "Reduce",
+					"category": "a",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Replicate",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⌿",
+			"name": "Slash Bar",
+			"meanings": [
+				{
+					"name": "Reduce First",
+					"category": "a",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Replicate First",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "\\",
+			"name": "Backslash",
+			"meanings": [
+				{
+					"name": "Scan",
+					"category": "a",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Expand",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍀",
+			"name": "Backslash Bar",
+			"meanings": [
+				{
+					"name": "Scan First",
+					"category": "a",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Expand First",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": ",",
+			"name": "Comma",
+			"meanings": [
+				{
+					"name": "Ravel",
+					"description": "All elements of the argument as a vector",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Catenate",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍪",
+			"name": "Comma Bar",
+			"meanings": [
+				{
+					"name": "Ravel Items",
+					"description": "Ravel each major cells",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Catenate First",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍴",
+			"name": "Rho",
+			"meanings": [
+				{
+					"name": "Shape",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Reshape",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⌽",
+			"name": "Circle Stile",
+			"meanings": [
+				{
+					"name": "Reverse",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Rotate",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⊖",
+			"name": "Circle Bar",
+			"meanings": [
+				{
+					"name": "Reverse First",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Rotate First",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍉",
+			"name": "Circle Backslash",
+			"meanings": [
+				{
+					"name": "Transpose",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "¨",
+			"name": "Dots",
+			"meanings": [
+				{
+					"name": "Each",
+					"description": "Apply a function to each element of a/two array(s)",
+					"category": "a",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍨",
+			"name": "Tilde Dots",
+			"meanings": [
+				{
+					"name": "Constant",
+					"description": "A function that always returns the operand",
+					"category": "a",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Commute",
+					"description": "Call the operand with the arguments swapped (dyadic call) or duplicated (monadic call)",
+					"category": "a",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍣",
+			"name": "Star Dots",
+			"meanings": [
+				{
+					"name": "Repeat",
+					"description": "Repeat a function until a predicate is satisfied or a specified number of times",
+					"category": "c",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": ".",
+			"name": "Dot",
+			"meanings": [
+				{
+					"name": "Inner Product",
+					"description": "Apply a function to each pair in the arguments and combine the results with another function",
+					"category": "c",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "∘.",
+			"name": "Jot Dot",
+			"meanings": [
+				{
+					"name": "Outer Product",
+					"description": "Apply a function to the cartesian product of the two arguments",
+					"category": "a",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "∘",
+			"name": "Jot",
+			"meanings": [
+				{
+					"name": "After",
+					"description": "Preprocess the right argument to a function with another function",
+					"category": "c",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Bind",
+					"description": "Bind an argument to a dyadic function, making it monadic",
+					"category": "c",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍤",
+			"name": "Jot Dots",
+			"meanings": [
+				{
+					"name": "Atop",
+					"description": "Call a monad using the result of a dyad as its argument",
+					"category": "c",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍥",
+			"name": "Circle Dots",
+			"meanings": [
+				{
+					"name": "Over",
+					"description": "Preprocess all arguments to a function with a monad",
+					"category": "c",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "@",
+			"name": "At",
+			"meanings": [
+				{
+					"name": "At",
+					"description": "Transform selected elements of an array",
+					"category": "c",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⎕",
+			"name": "Quad",
+			"meanings": [
+				{
+					"name": "Evaluated Input",
+					"category": "s",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Standard Output",
+					"category": "s",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "System Name",
+					"category": "s",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍞",
+			"name": "Quad Quote",
+			"meanings": [
+				{
+					"name": "String Input",
+					"category": "s",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Standard Error",
+					"category": "s",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍠",
+			"name": "Quad Colon",
 			"meanings": [
 				{
 					"name": "Variant",
+					"description": "Select a related function",
 					"category": "c",
 					"dialects": [
-						"of"
-					],
-					"description": "Select a variant (related function)"
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⌸",
+			"name": "Quad Equal",
+			"meanings": [
+				{
+					"name": "Key",
+					"description": "Apply a function to unique elements of an array and their indices",
+					"category": "a",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⌺",
+			"name": "Quad Diamond",
+			"meanings": [
+				{
+					"name": "Stencil",
+					"description": "Apply a function to windows of an array",
+					"category": "c",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⌶",
+			"name": "I-Beam",
+			"meanings": [
+				{
+					"name": "I-Beam",
+					"description": "Access non-primitive, implementation specific functions",
+					"category": "a",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍎",
+			"name": "Up Tack Jot (Hydrant)",
+			"meanings": [
+				{
+					"name": "Evaluate",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍕",
+			"name": "Down Tack Jot (Thorn)",
+			"meanings": [
+				{
+					"name": "Format",
+					"category": "f",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍬",
+			"name": "Zilde",
+			"meanings": [
+				{
+					"name": "Zilde",
+					"description": "Empty numeric vector",
+					"category": "r",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "{}",
+			"name": "Left Brace/Right Brace",
+			"meanings": [
+				{
+					"name": "Dfn/Dop",
+					"description": "Wrap a dfn definition",
+					"category": "s",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍺",
+			"name": "Alpha",
+			"meanings": [
+				{
+					"name": "Left Argument",
+					"category": "s",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍵",
+			"name": "Omega",
+			"meanings": [
+				{
+					"name": "Right Argument",
+					"category": "s",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍺⍺",
+			"name": "Alpha Alpha",
+			"meanings": [
+				{
+					"name": "Left Operand",
+					"category": "s",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍵⍵",
+			"name": "Omega Omega",
+			"meanings": [
+				{
+					"name": "Right Operand",
+					"category": "s",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": ":",
+			"name": "Colon",
+			"meanings": [
+				{
+					"name": "Guard",
+					"description": "Dfn guard: run RHS if LHS is true",
+					"category": "s",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Control Structure",
+					"description": "Begins a control structure name",
+					"category": "s",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "[]",
+			"name": "Left Bracket/Right Bracket",
+			"meanings": [
+				{
+					"name": "Index",
+					"description": "Index into an array",
+					"category": "s",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Function Axis",
+					"description": "Specify an axis for a function",
+					"category": "s",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "←",
+			"name": "Left Arrow",
+			"meanings": [
+				{
+					"name": "Assignment",
+					"description": "Assign a value to a name",
+					"category": "s",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "→",
+			"name": "Right Arrow",
+			"meanings": [
+				{
+					"name": "Branch",
+					"category": "s",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "∇",
+			"name": "Del",
+			"meanings": [
+				{
+					"name": "Tradfn Definition",
+					"category": "s",
+					"dialects": [
+						"dy"
+					]
+				},
+				{
+					"name": "Recurse Function",
+					"description": "In a dfn, refer to the dfn itself",
+					"category": "s",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "∇∇",
+			"name": "Del Del",
+			"meanings": [
+				{
+					"name": "Recurse Operator",
+					"description": "In a dop, refer to the dop itself",
+					"category": "s",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "¯",
+			"name": "Overbar",
+			"meanings": [
+				{
+					"name": "Negative",
+					"description": "Marks a number as negative",
+					"category": "s",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "Ee",
+			"name": "E",
+			"meanings": [
+				{
+					"name": "Exponential Separator",
+					"description": "Separates the mantissa and exponent of a number",
+					"category": "s",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "Jj",
+			"name": "J",
+			"meanings": [
+				{
+					"name": "Complex Separator",
+					"description": "Separates the real and imaginary part of a complex number",
+					"category": "s",
+					"dialects": [
+						"dy"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍝",
+			"name": "Lamp",
+			"meanings": [
+				{
+					"name": "Comment",
+					"description": "Start a comment that ends at the end of the line",
+					"category": "s",
+					"dialects": [
+						"dy"
+					]
 				}
 			]
 		}
