@@ -49,7 +49,8 @@
 					"description": "Complex conjugate",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Conjugate"
@@ -59,7 +60,8 @@
 					"name": "Addition",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Add"
@@ -75,7 +77,8 @@
 					"name": "Negate",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Negate"
@@ -85,10 +88,18 @@
 					"name": "Subtraction",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Subtract"
+					]
+				},
+				{
+					"name": "Flip Letter Case",
+					"category": "f",
+					"dialects": [
+						"ex"
 					]
 				}
 			]
@@ -102,7 +113,8 @@
 					"description": "Number sign (direction, for complex numbers)",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Signum"
@@ -112,10 +124,60 @@
 					"name": "Multiplication",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Times"
+					]
+				},
+				{
+					"name": "Query Letter Case",
+					"category": "f",
+					"dialects": [
+						"ex"
+					]
+				},
+				{
+					"name": "Set Letter Case",
+					"category": "f",
+					"dialects": [
+						"ex"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "÷",
+			"name": "Divide",
+			"meanings": [
+				{
+					"name": "Division",
+					"category": "f",
+					"dialects": [
+						"dy",
+						"ex"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Divide"
+					]
+				},
+				{
+					"name": "Reciprocal",
+					"category": "f",
+					"dialects": [
+						"dy",
+						"ex"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Reciprocal"
+					]
+				},
+				{
+					"name": "To Title Case",
+					"category": "f",
+					"dialects": [
+						"ex"
 					]
 				}
 			]
@@ -129,7 +191,8 @@
 					"description": "Power with Euler's number as the base",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Exponential"
@@ -139,10 +202,37 @@
 					"name": "Power",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Power_(function)"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "√",
+			"name": "Root",
+			"meanings": [
+				{
+					"name": "Square Root",
+					"category": "f",
+					"dialects": [
+						"ex"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Square_Root"
+					]
+				},
+				{
+					"name": "Root",
+					"category": "f",
+					"dialects": [
+						"ex"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Root"
 					]
 				}
 			]
@@ -155,7 +245,8 @@
 					"name": "Natural Logarithm",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Natural_Logarithm"
@@ -165,7 +256,8 @@
 					"name": "Logarithm",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Logarithm"
@@ -181,7 +273,8 @@
 					"name": "Matrix Inverse",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Matrix_Inverse"
@@ -191,7 +284,8 @@
 					"name": "Matrix Divide",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Matrix_Divide"
@@ -207,7 +301,8 @@
 					"name": "Pi Times",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Pi_Times"
@@ -218,7 +313,8 @@
 					"description": "A range of trigonometric and related functions selected using the left argument",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Circular"
@@ -234,7 +330,8 @@
 					"name": "Factorial",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Factorial"
@@ -244,7 +341,8 @@
 					"name": "Binomial Coefficient",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Binomial"
@@ -261,7 +359,8 @@
 					"description": "Random integer(s) in the range defined by the argument, or random float if the argument is 0",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Roll"
@@ -272,7 +371,8 @@
 					"description": "Right argument random selections from the range defined by the left argument",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Deal"
@@ -288,7 +388,8 @@
 					"name": "Magnitude",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Magnitude"
@@ -298,10 +399,18 @@
 					"name": "Residue",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Residue"
+					]
+				},
+				{
+					"name": "Case Fold",
+					"category": "f",
+					"dialects": [
+						"ex"
 					]
 				}
 			]
@@ -315,7 +424,8 @@
 					"description": "The smallest integer greater than or equal to the argument",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Ceiling"
@@ -326,10 +436,18 @@
 					"description": "The largest argument",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Maximum"
+					]
+				},
+				{
+					"name": "To Uppercase",
+					"category": "f",
+					"dialects": [
+						"ex"
 					]
 				}
 			]
@@ -343,7 +461,8 @@
 					"description": "The largest integer less than or equal to the argument",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Floor"
@@ -354,10 +473,18 @@
 					"description": "The smallest argument",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Minimum"
+					]
+				},
+				{
+					"name": "To Lowercase",
+					"category": "f",
+					"dialects": [
+						"ex"
 					]
 				}
 			]
@@ -371,10 +498,18 @@
 					"description": "Evaluate the right argument in the base defined by the left argument",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Decode"
+					]
+				},
+				{
+					"name": "Base-2 Decode",
+					"category": "f",
+					"dialects": [
+						"ex"
 					]
 				}
 			]
@@ -388,10 +523,18 @@
 					"description": "Represent the right argument in the base defined by the left argument",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Encode"
+					]
+				},
+				{
+					"name": "Base-2 Encode",
+					"category": "f",
+					"dialects": [
+						"ex"
 					]
 				}
 			]
@@ -405,7 +548,8 @@
 					"description": "The argument, unchanged",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Identity"
@@ -416,7 +560,8 @@
 					"description": "The right argument, unchanged",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Identity"
@@ -433,7 +578,8 @@
 					"description": "The argument, unchanged",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Identity"
@@ -444,7 +590,8 @@
 					"description": "The left argument, unchanged",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Identity"
@@ -460,10 +607,18 @@
 					"name": "Equal To",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Equal_to"
+					]
+				},
+				{
+					"name": "Is Type",
+					"category": "f",
+					"dialects": [
+						"ex"
 					]
 				}
 			]
@@ -476,7 +631,8 @@
 					"name": "Not Equal To",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Not_Equal_to"
@@ -492,6 +648,13 @@
 					"urls": [
 						"https://aplwiki.com/wiki/Nub_Sieve"
 					]
+				},
+				{
+					"name": "Is Not Type",
+					"category": "f",
+					"dialects": [
+						"ex"
+					]
 				}
 			]
 		},
@@ -503,10 +666,25 @@
 					"name": "Less Than or Equal To",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Less_than_or_Equal_to"
+					]
+				},
+				{
+					"name": "Is Nonnegative",
+					"category": "f",
+					"dialects": [
+						"ex"
+					]
+				},
+				{
+					"name": "Is Invisible Character",
+					"category": "f",
+					"dialects": [
+						"ex"
 					]
 				}
 			]
@@ -519,10 +697,25 @@
 					"name": "Less Than",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Less_than"
+					]
+				},
+				{
+					"name": "Is Positive",
+					"category": "f",
+					"dialects": [
+						"ex"
+					]
+				},
+				{
+					"name": "Is Control Character",
+					"category": "f",
+					"dialects": [
+						"ex"
 					]
 				}
 			]
@@ -535,10 +728,25 @@
 					"name": "Greater Than",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Greater_than"
+					]
+				},
+				{
+					"name": "Is Negative",
+					"category": "f",
+					"dialects": [
+						"ex"
+					]
+				},
+				{
+					"name": "Is Visible Character",
+					"category": "f",
+					"dialects": [
+						"ex"
 					]
 				}
 			]
@@ -551,10 +759,25 @@
 					"name": "Greater Than or Equal To",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Greater_than_or_Equal_to"
+					]
+				},
+				{
+					"name": "Is Nonpositive",
+					"category": "f",
+					"dialects": [
+						"ex"
+					]
+				},
+				{
+					"name": "Is Not Control Character",
+					"category": "f",
+					"dialects": [
+						"ex"
 					]
 				}
 			]
@@ -568,7 +791,8 @@
 					"description": "Compare the whole arrays for equality",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Match"
@@ -579,7 +803,8 @@
 					"description": "Level of boxing",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Depth"
@@ -596,7 +821,8 @@
 					"description": "Compare the whole arrays for not equality",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Not_Match"
@@ -607,7 +833,8 @@
 					"description": "The amount of major cells",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Tally"
@@ -623,10 +850,18 @@
 					"name": "Greatest Common Divisor",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/GCD"
+					]
+				},
+				{
+					"name": "Sort Descending",
+					"category": "f",
+					"dialects": [
+						"ex"
 					]
 				}
 			]
@@ -639,10 +874,18 @@
 					"name": "Least Common Multiple",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/LCM"
+					]
+				},
+				{
+					"name": "Sort Ascending",
+					"category": "f",
+					"dialects": [
+						"ex"
 					]
 				}
 			]
@@ -655,10 +898,18 @@
 					"name": "Nor",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Nor"
+					]
+				},
+				{
+					"name": "Not Any Equal To Type",
+					"category": "f",
+					"dialects": [
+						"ex"
 					]
 				}
 			]
@@ -671,10 +922,18 @@
 					"name": "Nand",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Nand"
+					]
+				},
+				{
+					"name": "Not All Equal To Type",
+					"category": "f",
+					"dialects": [
+						"ex"
 					]
 				}
 			]
@@ -688,7 +947,8 @@
 					"description": "Combine all elements into a single array",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Mix"
@@ -698,7 +958,8 @@
 					"name": "Take",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Take"
@@ -715,7 +976,8 @@
 					"description": "Convert an axis to a level of nesting",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Split"
@@ -725,7 +987,8 @@
 					"name": "Drop",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Drop"
@@ -742,7 +1005,8 @@
 					"description": "Wrap the argument into a nested scalar",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Enclose"
@@ -753,7 +1017,8 @@
 					"description": "Split the right argument into pieces specified by the left argument",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Partitioned_Enclose"
@@ -770,7 +1035,8 @@
 					"description": "The first element of the argument",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/First"
@@ -781,7 +1047,8 @@
 					"description": "Extract a value through layers of nesting",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Pick"
@@ -798,7 +1065,8 @@
 					"description": "Enclose if simple",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Nest"
@@ -809,10 +1077,34 @@
 					"description": "Split the right argument into pieces specified by the left argument",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Partition"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⊇",
+			"name": "Right Shoe Underbar",
+			"meanings": [
+				{
+					"name": "Disclose If Scalar",
+					"category": "f",
+					"dialects": [
+						"ex"
+					]
+				},
+				{
+					"name": "Sane Index",
+					"category": "f",
+					"dialects": [
+						"ex"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/From"
 					]
 				}
 			]
@@ -826,7 +1118,8 @@
 					"description": "Items of the right argument as specified by the left argument",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Index_(function)"
@@ -837,7 +1130,8 @@
 					"description": "Cast the argument to an array",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Materialise"
@@ -854,7 +1148,8 @@
 					"description": "Indices that sort the right argument in ascending order, optionally ordered according to the left argument",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Grade"
@@ -871,7 +1166,8 @@
 					"description": "Indices that sort the right argument in descending order, optionally ordered according to the left argument",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Grade"
@@ -888,7 +1184,8 @@
 					"description": "Indices with shape specified by the argument",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Index_Generator"
@@ -898,7 +1195,8 @@
 					"name": "Index Of",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Index_Of"
@@ -915,7 +1213,8 @@
 					"description": "True indices in the argument mask",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Indices"
@@ -926,7 +1225,8 @@
 					"description": "???",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Interval_Index"
@@ -942,7 +1242,8 @@
 					"name": "Element Of",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Membership"
@@ -953,7 +1254,8 @@
 					"description": "All simple elements of the argument, traversing nested entries",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Enlist"
@@ -970,10 +1272,22 @@
 					"description": "Mask of the start corners of the appearances of the left argument in the right argument",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Find"
+					]
+				},
+				{
+					"name": "Type",
+					"description": "Fill array corresponding to the argument",
+					"category": "f",
+					"dialects": [
+						"ex"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Type"
 					]
 				}
 			]
@@ -987,7 +1301,8 @@
 					"description": "The left argument catenated with the elements of the right argument that don't appear in the left argument",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Union"
@@ -998,7 +1313,8 @@
 					"description": "Unique elements",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Unique"
@@ -1015,10 +1331,22 @@
 					"description": "All elements of the left argument that appear in the right argument",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Intersection"
+					]
+				},
+				{
+					"name": "Self Classify",
+					"description": "???",
+					"category": "f",
+					"dialects": [
+						"ex"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Classify"
 					]
 				}
 			]
@@ -1031,7 +1359,8 @@
 					"name": "Not",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Not"
@@ -1042,7 +1371,8 @@
 					"description": "All elements of the left argument that don't appear in the right argument",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Without"
@@ -1058,17 +1388,30 @@
 					"name": "Reduce",
 					"category": "a",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Reduce"
 					]
 				},
 				{
+					"name": "Windowed Reduce",
+					"category": "a",
+					"dialects": [
+						"dy",
+						"ex"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Windowed_Reduce"
+					]
+				},
+				{
 					"name": "Replicate",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Replicate"
@@ -1084,17 +1427,30 @@
 					"name": "Reduce First",
 					"category": "a",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Reduce"
 					]
 				},
 				{
+					"name": "Windowed Reduce First",
+					"category": "a",
+					"dialects": [
+						"dy",
+						"ex"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Windowed_Reduce"
+					]
+				},
+				{
 					"name": "Replicate First",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Replicate"
@@ -1110,7 +1466,8 @@
 					"name": "Scan",
 					"category": "a",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Scan"
@@ -1120,10 +1477,18 @@
 					"name": "Expand",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Expand"
+					]
+				},
+				{
+					"name": "Outer Product",
+					"category": "a",
+					"dialects": [
+						"ex"
 					]
 				}
 			]
@@ -1136,7 +1501,8 @@
 					"name": "Scan First",
 					"category": "a",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Scan"
@@ -1146,10 +1512,19 @@
 					"name": "Expand First",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Expand"
+					]
+				},
+				{
+					"name": "Apply Right Argument (?)",
+					"description": "⊢∘f",
+					"category": "a",
+					"dialects": [
+						"ex"
 					]
 				}
 			]
@@ -1163,7 +1538,8 @@
 					"description": "All elements of the argument as a vector",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Ravel"
@@ -1173,7 +1549,8 @@
 					"name": "Catenate",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Catenate"
@@ -1190,7 +1567,8 @@
 					"description": "Ravel each major cells",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Table"
@@ -1200,7 +1578,8 @@
 					"name": "Catenate First",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Catenate"
@@ -1216,7 +1595,8 @@
 					"name": "Shape",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Shape"
@@ -1226,7 +1606,8 @@
 					"name": "Reshape",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Reshape"
@@ -1242,7 +1623,8 @@
 					"name": "Reverse",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Reverse"
@@ -1252,7 +1634,8 @@
 					"name": "Rotate",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Rotate"
@@ -1268,7 +1651,8 @@
 					"name": "Reverse First",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Reverse"
@@ -1278,7 +1662,8 @@
 					"name": "Rotate First",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Rotate"
@@ -1294,7 +1679,8 @@
 					"name": "Transpose",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Transpose"
@@ -1311,7 +1697,8 @@
 					"description": "Apply a function to each element of a/two array(s)",
 					"category": "a",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Each"
@@ -1328,7 +1715,8 @@
 					"description": "A function that always returns the operand",
 					"category": "a",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Constant"
@@ -1339,7 +1727,8 @@
 					"description": "Call the operand with the arguments swapped (dyadic call) or duplicated (monadic call)",
 					"category": "a",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Commute"
@@ -1356,7 +1745,8 @@
 					"description": "Repeat a function until a predicate is satisfied or a specified number of times",
 					"category": "c",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Power_(operator)"
@@ -1373,10 +1763,32 @@
 					"description": "Apply a function to each pair in the arguments and combine the results with another function",
 					"category": "c",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Inner_Product"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "∙",
+			"name": "Bullet",
+			"meanings": [
+				{
+					"name": "Inner Product",
+					"category": "c",
+					"dialects": [
+						"ex"
+					]
+				},
+				{
+					"name": "Alternant",
+					"description": "Generalized matrix determinant",
+					"category": "c",
+					"dialects": [
+						"ex"
 					]
 				}
 			]
@@ -1390,7 +1802,8 @@
 					"description": "Apply a function to the cartesian product of the two arguments",
 					"category": "a",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Outer_Product"
@@ -1407,7 +1820,8 @@
 					"description": "Preprocess the right argument to a function with another function",
 					"category": "c",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Beside"
@@ -1418,10 +1832,28 @@
 					"description": "Bind an argument to a dyadic function, making it monadic",
 					"category": "c",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Bind"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍛",
+			"name": "Jot Underbar",
+			"meanings": [
+				{
+					"name": "Before",
+					"description": "Preprocess the left argument to a function with another function",
+					"category": "c",
+					"dialects": [
+						"ex"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Reverse_Compose"
 					]
 				}
 			]
@@ -1435,10 +1867,23 @@
 					"description": "Call a monad using the result of a dyad as its argument",
 					"category": "c",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Atop_(operator)"
+					]
+				},
+				{
+					"name": "Rank",
+					"description": "Apply a function at a specified rank",
+					"category": "c",
+					"dialects": [
+						"dy",
+						"ex"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Rank_(operator)"
 					]
 				}
 			]
@@ -1452,10 +1897,39 @@
 					"description": "Preprocess all arguments to a function with a monad",
 					"category": "c",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Over"
+					]
+				},
+				{
+					"name": "Depth",
+					"description": "Apply a function at a specified depth",
+					"category": "c",
+					"dialects": [
+						"ex"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Depth_(operator)"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍢",
+			"name": "Del Dots",
+			"meanings": [
+				{
+					"name": "Under",
+					"description": "Apply a function, then another function, then the first function's inverse",
+					"category": "c",
+					"dialects": [
+						"ex"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Under"
 					]
 				}
 			]
@@ -1469,10 +1943,25 @@
 					"description": "Transform selected elements of an array",
 					"category": "c",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/At"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍫",
+			"name": "Del Tilde",
+			"meanings": [
+				{
+					"name": "Obverse",
+					"description": "Specify the inverse function for a function",
+					"category": "c",
+					"dialects": [
+						"ex"
 					]
 				}
 			]
@@ -1485,21 +1974,24 @@
 					"name": "Evaluated Input",
 					"category": "s",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					]
 				},
 				{
 					"name": "Standard Output",
 					"category": "s",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					]
 				},
 				{
 					"name": "System Name",
 					"category": "s",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Quad_name"
@@ -1515,14 +2007,16 @@
 					"name": "String Input",
 					"category": "s",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					]
 				},
 				{
 					"name": "Standard Error",
 					"category": "s",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					]
 				}
 			]
@@ -1536,7 +2030,8 @@
 					"description": "Select a related function",
 					"category": "c",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Variant"
@@ -1553,7 +2048,8 @@
 					"description": "Apply a function to unique elements of an array and their indices",
 					"category": "a",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Key"
@@ -1570,7 +2066,8 @@
 					"description": "Apply a function to windows of an array",
 					"category": "c",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Stencil"
@@ -1587,7 +2084,8 @@
 					"description": "Access non-primitive, implementation specific functions",
 					"category": "a",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/I-Beam"
@@ -1603,7 +2101,8 @@
 					"name": "Execute",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Execute"
@@ -1619,7 +2118,8 @@
 					"name": "Format",
 					"category": "f",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Format"
@@ -1636,10 +2136,189 @@
 					"description": "Empty numeric vector",
 					"category": "r",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Zilde"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⌂",
+			"name": "House",
+			"meanings": [
+				{
+					"name": "Dfns Workspace",
+					"category": "r",
+					"dialects": [
+						"ex"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "∞",
+			"name": "Infinity",
+			"meanings": [
+				{
+					"name": "Infinity",
+					"description": "The largest number",
+					"category": "r",
+					"dialects": [
+						"ex"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "¯∞",
+			"name": "Overbar Infinity",
+			"meanings": [
+				{
+					"name": "Negative Infinity",
+					"description": "The smallest number",
+					"category": "r",
+					"dialects": [
+						"ex"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⌾",
+			"name": "Circle Jot",
+			"meanings": [
+				{
+					"name": "Complex",
+					"description": "left + i * right",
+					"category": "f",
+					"dialects": [
+						"ex"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Complex_(function)"
+					]
+				},
+				{
+					"name": "Imaginary",
+					"description": "i * right",
+					"category": "f",
+					"dialects": [
+						"ex"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Imaginary"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "$",
+			"name": "Dollar",
+			"meanings": [
+				{
+					"name": "String Enhancement",
+					"description": "${expr} inside a string is evaluated",
+					"category": "f",
+					"dialects": [
+						"ex"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "…",
+			"name": "Ellipsis",
+			"meanings": [
+				{
+					"name": "Range",
+					"category": "f",
+					"dialects": [
+						"ex"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Range"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍧",
+			"name": "Left Shoe Stile",
+			"meanings": [
+				{
+					"name": "Nub Sieve",
+					"category": "f",
+					"dialects": [
+						"ex"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Nub_Sieve"
+					]
+				},
+				{
+					"name": "Count In",
+					"description": "???",
+					"category": "f",
+					"dialects": [
+						"ex"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "%",
+			"name": "Percent",
+			"meanings": [
+				{
+					"name": "Probability-logical Function",
+					"description": "???",
+					"category": "a",
+					"dialects": [
+						"ex"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍮",
+			"name": "Semicolon Underbar",
+			"meanings": [
+				{
+					"name": "Pair",
+					"category": "f",
+					"dialects": [
+						"ex"
+					]
+				},
+				{
+					"name": "Half Pair",
+					"category": "f",
+					"dialects": [
+						"ex"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍭",
+			"name": "Stile Tilde",
+			"meanings": [
+				{
+					"name": "Factors",
+					"category": "f",
+					"dialects": [
+						"ex"
+					]
+				},
+				{
+					"name": "Prime Related Functions",
+					"description": "0 -> non-prime? 1 -> prime? ¯1 -> primes less than the argument ¯2 -> argument-th prime 4 -> next prime ¯4 -> previous prime",
+					"category": "f",
+					"dialects": [
+						"ex"
 					]
 				}
 			]
@@ -1653,7 +2332,8 @@
 					"description": "Wrap a dfn definition",
 					"category": "s",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Dfn"
@@ -1669,7 +2349,8 @@
 					"name": "Left Argument",
 					"category": "s",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Dfn"
@@ -1685,7 +2366,8 @@
 					"name": "Right Argument",
 					"category": "s",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Dfn"
@@ -1701,7 +2383,8 @@
 					"name": "Left Operand",
 					"category": "s",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Dfn"
@@ -1717,7 +2400,8 @@
 					"name": "Right Operand",
 					"category": "s",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Dfn"
@@ -1734,7 +2418,8 @@
 					"description": "Dfn guard: run RHS if LHS is true",
 					"category": "s",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://help.dyalog.com/latest/#Language/Defined%20Functions%20and%20Operators/DynamicFunctions/Guards.htm"
@@ -1745,7 +2430,8 @@
 					"description": "Begins a control structure name",
 					"category": "s",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Control_structure"
@@ -1761,7 +2447,8 @@
 					"name": "Error Guard",
 					"category": "s",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://help.dyalog.com/latest/#Language/Defined%20Functions%20and%20Operators/DynamicFunctions/Error%20Guards.htm"
@@ -1778,7 +2465,8 @@
 					"description": "Index into an array",
 					"category": "s",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Indexing"
@@ -1789,7 +2477,8 @@
 					"description": "Specify an axis for a function",
 					"category": "s",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Function_axis"
@@ -1806,7 +2495,8 @@
 					"description": "Assign a value to a name",
 					"category": "s",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Assignment"
@@ -1822,7 +2512,8 @@
 					"name": "Branch",
 					"category": "s",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Branch"
@@ -1838,7 +2529,8 @@
 					"name": "Tradfn Definition",
 					"category": "s",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Defined_function_(traditional)"
@@ -1849,7 +2541,8 @@
 					"description": "In a dfn, refer to the dfn itself",
 					"category": "s",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://help.dyalog.com/latest/#Language/Defined%20Functions%20and%20Operators/DynamicFunctions/Recursion.htm"
@@ -1866,7 +2559,8 @@
 					"description": "In a dop, refer to the dop itself",
 					"category": "s",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://help.dyalog.com/latest/#Language/Defined%20Functions%20and%20Operators/DynamicFunctions/Recursion.htm"
@@ -1883,7 +2577,8 @@
 					"description": "Marks a number as negative",
 					"category": "s",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/High_minus"
@@ -1900,7 +2595,8 @@
 					"description": "Separates the mantissa and exponent of a number",
 					"category": "s",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					]
 				}
 			]
@@ -1914,7 +2610,8 @@
 					"description": "Separates the real and imaginary part of a complex number",
 					"category": "s",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
 					]
 				}
 			]
@@ -1928,7 +2625,23 @@
 					"description": "Start a comment that ends at the end of the line",
 					"category": "s",
 					"dialects": [
-						"dy"
+						"dy",
+						"ex"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "'",
+			"name": "Quote",
+			"meanings": [
+				{
+					"name": "String",
+					"description": "String delimiter",
+					"category": "s",
+					"dialects": [
+						"dy",
+						"ex"
 					]
 				}
 			]
