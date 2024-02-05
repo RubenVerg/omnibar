@@ -18,6 +18,10 @@
 		<a href='https://github.com/rubenverg/omnibar'><i class='bi bi-github me-2' />GitHub</a>
 	</p>
 
+	<ul>
+		<li>Many dialects call the same function/operator different names. In this list they are all grouped under a common name</li>
+	</ul>
+
 	<Table>
 		<thead>
 			<tr>

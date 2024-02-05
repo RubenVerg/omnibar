@@ -63,10 +63,18 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Add"
+					]
+				},
+				{
+					"name": "Identity",
+					"category": "f",
+					"dialects": [
+						"dz"
 					]
 				}
 			]
@@ -81,7 +89,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Negate"
@@ -93,7 +102,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Subtract"
@@ -103,7 +113,8 @@
 					"name": "Flip Letter Case",
 					"category": "f",
 					"dialects": [
-						"ex"
+						"ex",
+						"dz"
 					]
 				}
 			]
@@ -119,7 +130,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Signum"
@@ -131,7 +143,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Times"
@@ -141,7 +154,8 @@
 					"name": "Query Letter Case",
 					"category": "f",
 					"dialects": [
-						"ex"
+						"ex",
+						"dz"
 					]
 				},
 				{
@@ -163,7 +177,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Divide"
@@ -175,7 +190,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Reciprocal"
@@ -201,7 +217,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Exponential"
@@ -213,7 +230,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Power_(function)"
@@ -230,7 +248,8 @@
 					"category": "f",
 					"dialects": [
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Square_Root"
@@ -241,7 +260,8 @@
 					"category": "f",
 					"dialects": [
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Root"
@@ -259,7 +279,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Natural_Logarithm"
@@ -271,7 +292,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Logarithm"
@@ -319,7 +341,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Pi_Times"
@@ -332,7 +355,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Circular"
@@ -350,7 +374,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Factorial"
@@ -362,7 +387,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Binomial"
@@ -381,7 +407,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Roll"
@@ -394,7 +421,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Deal"
@@ -412,7 +440,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Magnitude"
@@ -424,7 +453,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Residue"
@@ -450,7 +480,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Ceiling"
@@ -463,7 +494,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Maximum"
@@ -473,7 +505,8 @@
 					"name": "To Uppercase",
 					"category": "f",
 					"dialects": [
-						"ex"
+						"ex",
+						"dz"
 					]
 				}
 			]
@@ -489,7 +522,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Floor"
@@ -502,7 +536,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Minimum"
@@ -512,7 +547,8 @@
 					"name": "To Lowercase",
 					"category": "f",
 					"dialects": [
-						"ex"
+						"ex",
+						"dz"
 					]
 				}
 			]
@@ -528,7 +564,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Decode"
@@ -538,7 +575,8 @@
 					"name": "Base-2 Decode",
 					"category": "f",
 					"dialects": [
-						"ex"
+						"ex",
+						"dz"
 					]
 				}
 			]
@@ -554,7 +592,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Encode"
@@ -564,7 +603,8 @@
 					"name": "Base-2 Encode",
 					"category": "f",
 					"dialects": [
-						"ex"
+						"ex",
+						"dz"
 					]
 				}
 			]
@@ -580,7 +620,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Identity"
@@ -593,7 +634,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Identity"
@@ -612,7 +654,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Identity"
@@ -625,7 +668,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Identity"
@@ -705,7 +749,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Less_than_or_Equal_to"
@@ -744,7 +789,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Less_than"
@@ -770,6 +816,13 @@
 					"dialects": [
 						"vi"
 					]
+				},
+				{
+					"name": "Sort Ascending",
+					"category": "f",
+					"dialects": [
+						"dz"
+					]
 				}
 			]
 		},
@@ -783,7 +836,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Greater_than"
@@ -809,6 +863,14 @@
 					"category": "f",
 					"dialects": [
 						"vi"
+					]
+				},
+				{
+					"name": "Sort Descending",
+					"description": "???",
+					"category": "f",
+					"dialects": [
+						"dz"
 					]
 				}
 			]
@@ -863,7 +925,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Match"
@@ -876,7 +939,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Depth"
@@ -895,7 +959,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Not_Match"
@@ -908,7 +973,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Tally"
@@ -926,7 +992,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/GCD"
@@ -945,6 +1012,14 @@
 					"dialects": [
 						"vi"
 					]
+				},
+				{
+					"name": "Monadic GCD",
+					"description": "GCD reduction (any 1?)",
+					"category": "f",
+					"dialects": [
+						"dz"
+					]
 				}
 			]
 		},
@@ -958,7 +1033,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/LCM"
@@ -977,6 +1053,14 @@
 					"dialects": [
 						"vi"
 					]
+				},
+				{
+					"name": "Monadic LCM",
+					"description": "LCM reduction (all 1?)",
+					"category": "f",
+					"dialects": [
+						"dz"
+					]
 				}
 			]
 		},
@@ -990,7 +1074,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Nor"
@@ -1001,6 +1086,14 @@
 					"category": "f",
 					"dialects": [
 						"ex"
+					]
+				},
+				{
+					"name": "Not All",
+					"description": "any 0?",
+					"category": "f",
+					"dialects": [
+						"dz"
 					]
 				}
 			]
@@ -1015,7 +1108,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Nand"
@@ -1026,6 +1120,14 @@
 					"category": "f",
 					"dialects": [
 						"ex"
+					]
+				},
+				{
+					"name": "None",
+					"description": "all 0?",
+					"category": "f",
+					"dialects": [
+						"dz"
 					]
 				}
 			]
@@ -1041,7 +1143,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Mix"
@@ -1053,7 +1156,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Take"
@@ -1072,7 +1176,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Split"
@@ -1084,7 +1189,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Drop"
@@ -1103,7 +1209,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Enclose"
@@ -1116,7 +1223,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Partitioned_Enclose"
@@ -1135,7 +1243,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/First"
@@ -1148,7 +1257,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Pick"
@@ -1204,7 +1314,8 @@
 					"category": "f",
 					"dialects": [
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/From"
@@ -1249,6 +1360,14 @@
 					"urls": [
 						"https://aplwiki.com/wiki/Materialise"
 					]
+				},
+				{
+					"name": "Map K&V",
+					"description": "???",
+					"category": "f",
+					"dialects": [
+						"dz"
+					]
 				}
 			]
 		},
@@ -1263,7 +1382,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Grade"
@@ -1282,7 +1402,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Grade"
@@ -1301,7 +1422,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Index_Generator"
@@ -1313,7 +1435,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Index_Of"
@@ -1332,7 +1455,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Indices"
@@ -1363,7 +1487,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Membership"
@@ -1376,7 +1501,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Enlist"
@@ -1395,7 +1521,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Find"
@@ -1426,7 +1553,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Union"
@@ -1439,7 +1567,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Unique"
@@ -1458,7 +1587,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Intersection"
@@ -1487,7 +1617,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Not"
@@ -1500,7 +1631,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Without"
@@ -1518,7 +1650,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Reduce"
@@ -1584,7 +1717,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Replicate"
@@ -1602,7 +1736,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Scan"
@@ -1651,7 +1786,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Expand"
@@ -1678,7 +1814,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Ravel"
@@ -1690,7 +1827,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Catenate"
@@ -1709,7 +1847,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Table"
@@ -1721,7 +1860,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Catenate"
@@ -1739,7 +1879,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Shape"
@@ -1751,7 +1892,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Reshape"
@@ -1769,7 +1911,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Reverse"
@@ -1781,7 +1924,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Rotate"
@@ -1799,7 +1943,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Reverse"
@@ -1811,7 +1956,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Rotate"
@@ -1829,7 +1975,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Transpose"
@@ -1848,7 +1995,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Each"
@@ -1867,7 +2015,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Constant"
@@ -1880,7 +2029,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Commute"
@@ -1899,10 +2049,25 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Power_(operator)"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍡",
+			"name": "Down Tack Dots",
+			"meanings": [
+				{
+					"name": "Cumulative Repeat",
+					"description": "Like ⍣, but collect intermediary results",
+					"category": "c",
+					"dialects": [
+						"dz"
 					]
 				}
 			]
@@ -1918,7 +2083,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Inner_Product"
@@ -1977,7 +2143,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Beside"
@@ -2008,7 +2175,8 @@
 					"category": "c",
 					"dialects": [
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Reverse_Compose"
@@ -2027,7 +2195,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Atop_(operator)"
@@ -2059,7 +2228,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Over"
@@ -2089,10 +2259,39 @@
 					"category": "c",
 					"dialects": [
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Under"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "ᐵ",
+			"name": "Right Wedge Dots",
+			"meanings": [
+				{
+					"name": "Each Left",
+					"description": "Each, only on the left argument",
+					"category": "a",
+					"dialects": [
+						"dz"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "ᑈ",
+			"name": "Left Wedge Dots",
+			"meanings": [
+				{
+					"name": "Each Right",
+					"description": "Each, only on the right argument",
+					"category": "a",
+					"dialects": [
+						"dz"
 					]
 				}
 			]
@@ -2108,7 +2307,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/At"
@@ -2126,7 +2326,8 @@
 					"category": "c",
 					"dialects": [
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					]
 				}
 			]
@@ -2141,7 +2342,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					]
 				},
 				{
@@ -2150,7 +2352,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					]
 				},
 				{
@@ -2159,7 +2362,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Quad_name"
@@ -2177,7 +2381,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					]
 				},
 				{
@@ -2186,7 +2391,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					]
 				}
 			]
@@ -2221,7 +2427,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Key"
@@ -2232,6 +2439,34 @@
 					"category": "a",
 					"dialects": [
 						"vi"
+					]
+				},
+				{
+					"name": "Get In Map",
+					"category": "a",
+					"dialects": [
+						"dz"
+					]
+				},
+				{
+					"name": "Set In Map",
+					"category": "a",
+					"dialects": [
+						"dz"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍁",
+			"name": "Quad Slash",
+			"meanings": [
+				{
+					"name": "Diagonals",
+					"description": "Apply a function to each diagonal of a matrix",
+					"category": "a",
+					"dialects": [
+						"dz"
 					]
 				}
 			]
@@ -2284,7 +2519,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Execute"
@@ -2302,7 +2538,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Format"
@@ -2321,7 +2558,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Zilde"
@@ -2395,6 +2633,17 @@
 					"urls": [
 						"https://aplwiki.com/wiki/Imaginary"
 					]
+				},
+				{
+					"name": "Table",
+					"description": "Outer product (alias for ∘.)",
+					"category": "a",
+					"dialects": [
+						"dz"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Outer_Product"
+					]
 				}
 			]
 		},
@@ -2421,7 +2670,8 @@
 					"name": "Range",
 					"category": "f",
 					"dialects": [
-						"ex"
+						"ex",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Range"
@@ -2437,7 +2687,8 @@
 					"name": "Nub Sieve",
 					"category": "f",
 					"dialects": [
-						"ex"
+						"ex",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Nub_Sieve"
@@ -2448,7 +2699,8 @@
 					"description": "???",
 					"category": "f",
 					"dialects": [
-						"ex"
+						"ex",
+						"dz"
 					]
 				}
 			]
@@ -2463,6 +2715,14 @@
 					"category": "a",
 					"dialects": [
 						"ex"
+					]
+				},
+				{
+					"name": "Merge",
+					"description": "???",
+					"category": "f",
+					"dialects": [
+						"dz"
 					]
 				}
 			]
@@ -2537,7 +2797,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Dfn"
@@ -2555,7 +2816,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Dfn"
@@ -2582,6 +2844,19 @@
 			]
 		},
 		{
+			"glyph": "⍶",
+			"name": "Alpha Underbar",
+			"meanings": [
+				{
+					"name": "Left Operand",
+					"category": "s",
+					"dialects": [
+						"dz"
+					]
+				}
+			]
+		},
+		{
 			"glyph": "⍵⍵",
 			"name": "Omega Omega",
 			"meanings": [
@@ -2595,6 +2870,19 @@
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Dfn"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍹",
+			"name": "Omega Underbar",
+			"meanings": [
+				{
+					"name": "Right Operand",
+					"category": "s",
+					"dialects": [
+						"dz"
 					]
 				}
 			]
@@ -2697,6 +2985,14 @@
 					"urls": [
 						"https://aplwiki.com/wiki/Assignment"
 					]
+				},
+				{
+					"name": "Return",
+					"description": "Return early from a dfn",
+					"category": "s",
+					"dialects": [
+						"dz"
+					]
 				}
 			]
 		},
@@ -2741,7 +3037,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://help.dyalog.com/latest/#Language/Defined%20Functions%20and%20Operators/DynamicFunctions/Recursion.htm"
