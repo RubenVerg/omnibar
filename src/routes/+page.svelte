@@ -3,6 +3,10 @@
   import { Table } from '@sveltestrap/sveltestrap';
 </script>
 
+<svelte:head>
+	<title>Omnibar</title>
+</svelte:head>
+
 <div class='mx-3 my-4'>
 	<h1>Omnibar</h1>
 
