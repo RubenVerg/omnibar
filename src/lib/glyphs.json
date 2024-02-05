@@ -14,6 +14,9 @@
 		},
 		"r": {
 			"name": "Array"
+		},
+		"h": {
+			"name": "Hyperator"
 		}
 	},
 	"dialects": {
@@ -51,7 +54,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Conjugate"
@@ -64,7 +68,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Add"
@@ -90,7 +95,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Negate"
@@ -103,7 +109,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Subtract"
@@ -131,7 +138,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Signum"
@@ -144,7 +152,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Times"
@@ -178,7 +187,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Divide"
@@ -191,7 +201,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Reciprocal"
@@ -218,7 +229,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Exponential"
@@ -231,7 +243,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Power_(function)"
@@ -249,7 +262,8 @@
 					"dialects": [
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Square_Root"
@@ -261,7 +275,8 @@
 					"dialects": [
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Root"
@@ -280,7 +295,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Natural_Logarithm"
@@ -293,7 +309,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Logarithm"
@@ -311,7 +328,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Matrix_Inverse"
@@ -323,7 +341,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Matrix_Divide"
@@ -342,7 +361,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Pi_Times"
@@ -356,7 +376,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Circular"
@@ -375,7 +396,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Factorial"
@@ -388,7 +410,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Binomial"
@@ -408,7 +431,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Roll"
@@ -422,7 +446,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Deal"
@@ -441,7 +466,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Magnitude"
@@ -454,7 +480,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Residue"
@@ -481,7 +508,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Ceiling"
@@ -495,7 +523,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Maximum"
@@ -523,7 +552,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Floor"
@@ -537,7 +567,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Minimum"
@@ -565,7 +596,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Decode"
@@ -593,7 +625,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Encode"
@@ -605,6 +638,13 @@
 					"dialects": [
 						"ex",
 						"dz"
+					]
+				},
+				{
+					"name": "Type",
+					"category": "f",
+					"dialects": [
+						"n2"
 					]
 				}
 			]
@@ -621,7 +661,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Identity"
@@ -635,7 +676,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Identity"
@@ -655,7 +697,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Identity"
@@ -669,7 +712,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Identity"
@@ -687,7 +731,9 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Equal_to"
@@ -698,6 +744,14 @@
 					"category": "f",
 					"dialects": [
 						"ex"
+					]
+				},
+				{
+					"name": "Dimension",
+					"description": "Hypercomplex dimension (1, 2, 4 or 8)",
+					"category": "f",
+					"dialects": [
+						"n2"
 					]
 				}
 			]
@@ -712,7 +766,9 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Not_Equal_to"
@@ -736,6 +792,14 @@
 					"dialects": [
 						"ex"
 					]
+				},
+				{
+					"name": "Norm",
+					"description": "Hypercomplex norm (magnitude squared)",
+					"category": "f",
+					"dialects": [
+						"n2"
+					]
 				}
 			]
 		},
@@ -750,7 +814,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Less_than_or_Equal_to"
@@ -790,7 +855,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Less_than"
@@ -823,6 +889,17 @@
 					"dialects": [
 						"dz"
 					]
+				},
+				{
+					"name": "Condense",
+					"description": "Compress a real array into an array of hypercomplex numbers",
+					"category": "f",
+					"dialects": [
+						"n2"
+					],
+					"urls": [
+						"https://wiki.nars2000.org/index.php?title=Condense"
+					]
 				}
 			]
 		},
@@ -837,7 +914,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Greater_than"
@@ -872,6 +950,17 @@
 					"dialects": [
 						"dz"
 					]
+				},
+				{
+					"name": "Dilate",
+					"description": "Expand an array of hypercomplex numbers into an array of reals",
+					"category": "f",
+					"dialects": [
+						"n2"
+					],
+					"urls": [
+						"https://wiki.nars2000.org/index.php?title=Dilate"
+					]
 				}
 			]
 		},
@@ -885,7 +974,9 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Greater_than_or_Equal_to"
@@ -926,7 +1017,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Match"
@@ -940,7 +1032,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Depth"
@@ -960,7 +1053,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Not_Match"
@@ -974,7 +1068,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Tally"
@@ -993,7 +1088,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/GCD"
@@ -1034,7 +1130,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/LCM"
@@ -1075,7 +1172,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Nor"
@@ -1109,7 +1207,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Nand"
@@ -1157,10 +1256,18 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Take"
+					]
+				},
+				{
+					"name": "First",
+					"category": "f",
+					"dialects": [
+						"n2"
 					]
 				}
 			]
@@ -1190,7 +1297,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Drop"
@@ -1210,7 +1318,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Enclose"
@@ -1258,10 +1367,18 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Pick"
+					]
+				},
+				{
+					"name": "Mix",
+					"category": "f",
+					"dialects": [
+						"n2"
 					]
 				}
 			]
@@ -1294,6 +1411,16 @@
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Partition"
+					]
+				},
+				{
+					"name": "Subset",
+					"category": "f",
+					"dialects": [
+						"n2"
+					],
+					"urls": [
+						"https://wiki.nars2000.org/index.php?title=Sets"
 					]
 				}
 			]
@@ -1328,6 +1455,16 @@
 					"dialects": [
 						"vi"
 					]
+				},
+				{
+					"name": "Superset",
+					"category": "f",
+					"dialects": [
+						"n2"
+					],
+					"urls": [
+						"https://wiki.nars2000.org/index.php?title=Sets"
+					]
 				}
 			]
 		},
@@ -1342,7 +1479,9 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Index_(function)"
@@ -1383,7 +1522,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Grade"
@@ -1403,7 +1543,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Grade"
@@ -1423,7 +1564,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Index_Generator"
@@ -1436,7 +1578,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Index_Of"
@@ -1456,7 +1599,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Indices"
@@ -1474,6 +1618,14 @@
 					"urls": [
 						"https://aplwiki.com/wiki/Interval_Index"
 					]
+				},
+				{
+					"name":  "Array Lookup",
+					"description": "Like ⍳, but on major cells",
+					"category": "f",
+					"dialects": [
+						"n2"
+					]
 				}
 			]
 		},
@@ -1488,7 +1640,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Membership"
@@ -1502,7 +1655,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Enlist"
@@ -1522,7 +1676,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Find"
@@ -1554,7 +1709,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Union"
@@ -1568,7 +1724,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Unique"
@@ -1588,7 +1745,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Intersection"
@@ -1618,7 +1776,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Not"
@@ -1632,10 +1791,28 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Without"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "§",
+			"name": "Section",
+			"meanings": [
+				{
+					"name": "Symmetric Difference",
+					"description": "Elements that appear in exactly one of the arguments",
+					"category": "f",
+					"dialects": [
+						"n2"
+					],
+					"urls": [
+						"https://wiki.nars2000.org/index.php?title=Sets"
 					]
 				}
 			]
@@ -1651,7 +1828,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Reduce"
@@ -1663,7 +1841,9 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Windowed_Reduce"
@@ -1675,7 +1855,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Replicate"
@@ -1693,7 +1874,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Reduce"
@@ -1705,7 +1887,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Windowed_Reduce"
@@ -1718,7 +1901,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Replicate"
@@ -1737,7 +1921,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Scan"
@@ -1749,7 +1934,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Expand"
@@ -1774,7 +1960,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Scan"
@@ -1787,7 +1974,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Expand"
@@ -1815,7 +2003,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Ravel"
@@ -1828,7 +2017,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Catenate"
@@ -1848,7 +2038,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Table"
@@ -1861,7 +2052,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Catenate"
@@ -1880,7 +2072,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Shape"
@@ -1893,7 +2086,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Reshape"
@@ -1912,7 +2106,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Reverse"
@@ -1925,7 +2120,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Rotate"
@@ -1944,7 +2140,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Reverse"
@@ -1957,7 +2154,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Rotate"
@@ -1976,7 +2174,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Transpose"
@@ -1996,7 +2195,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Each"
@@ -2030,7 +2230,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Commute"
@@ -2050,7 +2251,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Power_(operator)"
@@ -2069,6 +2271,16 @@
 					"dialects": [
 						"dz"
 					]
+				},
+				{
+					"name": "Convolution",
+					"category": "c",
+					"dialects": [
+						"n2"
+					],
+					"urls": [
+						"https://wiki.nars2000.org/index.php?title=Convolution"
+					]
 				}
 			]
 		},
@@ -2084,10 +2296,21 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Inner_Product"
+					]
+				},
+				{
+					"name": "Alternant",
+					"category": "c",
+					"dialects": [
+						"n2"
+					],
+					"urls": [
+						"https://wiki.nars2000.org/index.php?title=Determinant_Operator"
 					]
 				}
 			]
@@ -2144,7 +2367,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Beside"
@@ -2157,7 +2381,9 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Bind"
@@ -2196,7 +2422,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Atop_(operator)"
@@ -2209,7 +2436,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Rank_(operator)"
@@ -2229,7 +2457,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Over"
@@ -2343,7 +2572,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					]
 				},
 				{
@@ -2353,7 +2583,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					]
 				},
 				{
@@ -2363,7 +2594,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Quad_name"
@@ -2382,7 +2614,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					]
 				},
 				{
@@ -2392,7 +2625,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					]
 				}
 			]
@@ -2408,10 +2642,13 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"n2"
 					],
 					"urls": [
-						"https://aplwiki.com/wiki/Variant"
+						"https://aplwiki.com/wiki/Variant",
+						"https://help.dyalog.com/18.2/Content/Language/Primitive%20Operators/Variant.htm",
+						"https://wiki.nars2000.org/index.php?title=Variant"
 					]
 				}
 			]
@@ -2520,7 +2757,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Execute"
@@ -2539,7 +2777,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Format"
@@ -2559,7 +2798,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Zilde"
@@ -2589,7 +2829,9 @@
 					"description": "The largest number",
 					"category": "r",
 					"dialects": [
-						"ex"
+						"ex",
+						"dz",
+						"n2"
 					]
 				}
 			]
@@ -2603,7 +2845,22 @@
 					"description": "The smallest number",
 					"category": "r",
 					"dialects": [
-						"ex"
+						"ex",
+						"dz",
+						"n2"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "∅",
+			"name": "Circle Slash",
+			"meanings": [
+				{
+					"name": "Not a Number",
+					"category": "r",
+					"dialects": [
+						"n2"
 					]
 				}
 			]
@@ -2680,6 +2937,39 @@
 			]
 		},
 		{
+			"glyph": "..",
+			"name": "Dot Dot",
+			"meanings": [
+				{
+					"name": "Range",
+					"category": "f",
+					"dialects": [
+						"n2"
+					],
+					"urls": [
+						"https://aplwiki.com/wiki/Range"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍦",
+			"name": "Down Shoe Stile",
+			"meanings": [
+				{
+					"name": "Multisets",
+					"description": "Turns set functions into multiset functions",
+					"category": "a",
+					"dialects": [
+						"n2"
+					],
+					"urls": [
+						"https://wiki.nars2000.org/index.php?title=Multisets"
+					]
+				}
+			]
+		},
+		{
 			"glyph": "⍧",
 			"name": "Left Shoe Stile",
 			"meanings": [
@@ -2735,14 +3025,16 @@
 					"name": "Pair",
 					"category": "f",
 					"dialects": [
-						"ex"
+						"ex",
+						"dz"
 					]
 				},
 				{
 					"name": "Half Pair",
 					"category": "f",
 					"dialects": [
-						"ex"
+						"ex",
+						"dz"
 					]
 				}
 			]
@@ -2760,10 +3052,136 @@
 				},
 				{
 					"name": "Prime Related Functions",
-					"description": "0 -> non-prime? 1 -> prime? ¯1 -> primes less than the argument ¯2 -> argument-th prime 4 -> next prime ¯4 -> previous prime",
+					"description": "Selected by left argument: 0 → non-prime? 1 → prime? ¯1 → primes less than the argument ¯2 → argument-th prime 4 → next prime ¯4 → previous prime",
 					"category": "f",
 					"dialects": [
 						"ex"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "π",
+			"name": "Pi",
+			"meanings": [
+				{
+					"name": "Prime Factors",
+					"category": "f",
+					"dialects": [
+						"n2"
+					],
+					"urls": [
+						"https://wiki.nars2000.org/index.php?title=Primes"
+					]
+				},
+				{
+					"name": "Prime Related Functions",
+					"description": "Selected by left argument: ¯2 → argument-th prime ¯1 → last prime before argument 0 → is prime? 1 → first prime after argument 2 → number of primes before the argument 10 → length of divisors 11 → sum of divisors 12 → Möbius function 13 → Euler's totient function",
+					"category": "f",
+					"dialects": [
+						"n2"
+					],
+					"urls": [
+						"https://wiki.nars2000.org/index.php?title=Primes"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⊙",
+			"name": "Circle Dot",
+			"meanings": [
+				{
+					"name": "Null",
+					"description": "The identity operator, useful for casting hybrids into functions",
+					"category": "a",
+					"dialects": [
+						"n2"
+					],
+					"urls": [
+						"https://wiki.nars2000.org/index.php?title=Null"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "‼",
+			"name": "Double Exclamation Mark",
+			"meanings": [
+				{
+					"name": "Combinatorial",
+					"category": "a",
+					"dialects": [
+						"n2"
+					],
+					"urls": [
+						"https://wiki.nars2000.org/index.php?title=Combinatorial"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⌻",
+			"name": "Quad Jot",
+			"meanings": [
+				{
+					"name": "Matrix",
+					"description": "Apply a function to a diagonalizable matrix",
+					"category": "a",
+					"dialects": [
+						"n2"
+					],
+					"urls": [
+						"https://wiki.nars2000.org/index.php?title=Matrix"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "∂",
+			"name": "Derivative",
+			"meanings": [
+				{
+					"name": "Derivative",
+					"category": "a",
+					"dialects": [
+						"n2"
+					],
+					"urls": [
+						"https://wiki.nars2000.org/index.php?title=Derivative"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "∫",
+			"name": "Integral",
+			"meanings": [
+				{
+					"name": "Integral",
+					"category": "a",
+					"dialects": [
+						"n2"
+					],
+					"urls": [
+						"https://wiki.nars2000.org/index.php?title=Integral"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍑",
+			"name": "Down Tack Overbar",
+			"meanings": [
+				{
+					"name": "Transform",
+					"description": "???",
+					"category": "h",
+					"dialects": [
+						"n2"
+					],
+					"urls": [
+						"http://www.sudleyplace.com/APL/A%20Transform%20Hyperator%20in%20APL.pdf"
 					]
 				}
 			]
@@ -2779,7 +3197,9 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Dfn"
@@ -2798,7 +3218,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Dfn"
@@ -2817,7 +3238,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Dfn"
@@ -2835,7 +3257,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Dfn"
@@ -2866,7 +3289,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Dfn"
@@ -2883,6 +3307,32 @@
 					"category": "s",
 					"dialects": [
 						"dz"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍺⍺⍺",
+			"name": "Alpha Alpha Alpha",
+			"meanings": [
+				{
+					"name": "Left Hyperand",
+					"category": "s",
+					"dialects": [
+						"n2"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⍵⍵⍵",
+			"name": "Omega Omega Omega",
+			"meanings": [
+				{
+					"name": "Right Hyperand",
+					"category": "s",
+					"dialects": [
+						"n2"
 					]
 				}
 			]
@@ -2911,7 +3361,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Control_structure"
@@ -2948,7 +3399,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Indexing"
@@ -2980,7 +3432,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Assignment"
@@ -2992,6 +3445,17 @@
 					"category": "s",
 					"dialects": [
 						"dz"
+					]
+				},
+				{
+					"name": "Sink",
+					"description": "Don't print the result of an expression",
+					"category": "s",
+					"dialects": [
+						"n2"
+					],
+					"urls": [
+						"https://wiki.nars2000.org/index.php?title=Sink"
 					]
 				}
 			]
@@ -3006,7 +3470,8 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/Branch"
@@ -3038,7 +3503,8 @@
 						"dy",
 						"ex",
 						"vi",
-						"dz"
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://help.dyalog.com/latest/#Language/Defined%20Functions%20and%20Operators/DynamicFunctions/Recursion.htm"
@@ -3057,7 +3523,25 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"n2"
+					],
+					"urls": [
+						"https://help.dyalog.com/latest/#Language/Defined%20Functions%20and%20Operators/DynamicFunctions/Recursion.htm"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "∇∇∇",
+			"name": "Del Del Del",
+			"meanings": [
+				{
+					"name": "Recurse Hyperator",
+					"description": "In a dhyp, refer to the dyp itself",
+					"category": "s",
+					"dialects": [
+						"n2"
 					],
 					"urls": [
 						"https://help.dyalog.com/latest/#Language/Defined%20Functions%20and%20Operators/DynamicFunctions/Recursion.htm"
@@ -3076,7 +3560,9 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz",
+						"n2"
 					],
 					"urls": [
 						"https://aplwiki.com/wiki/High_minus"
@@ -3086,7 +3572,7 @@
 		},
 		{
 			"glyph": "Ee",
-			"name": "E",
+			"name": "",
 			"meanings": [
 				{
 					"name": "Exponential Separator",
@@ -3095,14 +3581,16 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz",
+						"n2"
 					]
 				}
 			]
 		},
 		{
 			"glyph": "Jj",
-			"name": "J",
+			"name": "",
 			"meanings": [
 				{
 					"name": "Complex Separator",
@@ -3111,7 +3599,218 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"n2"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "ad",
+			"name": "",
+			"meanings": [
+				{
+					"name": "Complex Angle Degrees",
+					"description": "Separates the radius and angle in degrees of a polar complex number",
+					"category": "s",
+					"dialects": [
+						"n2"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "ah",
+			"name": "",
+			"meanings": [
+				{
+					"name": "Complex Angle Half Unit",
+					"description": "Separates the radius and angle in half unit normalized of a polar complex number",
+					"category": "s",
+					"dialects": [
+						"n2"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "ar",
+			"name": "",
+			"meanings": [
+				{
+					"name": "Complex Angle Radians",
+					"description": "Separates the radius and angle in radians of a polar complex number",
+					"category": "s",
+					"dialects": [
+						"n2"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "au",
+			"name": "",
+			"meanings": [
+				{
+					"name": "Complex Angle Unit",
+					"description": "Separates the radius and angle in unsigned unit normalized of a polar complex number",
+					"category": "s",
+					"dialects": [
+						"n2"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "b",
+			"name": "",
+			"meanings": [
+				{
+					"name": "Base Point Notation",
+					"description": "Separates the base and number of a base point notation number",
+					"category": "s",
+					"dialects": [
+						"n2"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "g",
+			"name": "",
+			"meanings": [
+				{
+					"name": "Gamma Point Notation",
+					"description": "Separates the multiplier and exponent of a gamma point notation number",
+					"category": "s",
+					"dialects": [
+						"n2"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "p",
+			"name": "",
+			"meanings": [
+				{
+					"name": "Pi Point Notation",
+					"description": "Separates the multiplier and exponent of a pi point notation number",
+					"category": "s",
+					"dialects": [
+						"n2"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "r",
+			"name": "",
+			"meanings": [
+				{
+					"name": "Rational",
+					"description": "Separates the numerator and denominator of a rational number",
+					"category": "s",
+					"dialects": [
+						"n2"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "v",
+			"name": "",
+			"meanings": [
+				{
+					"name": "Multiprecision Float",
+					"category": "s",
+					"dialects": [
+						"n2"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "x",
+			"name": "",
+			"meanings": [
+				{
+					"name": "Euler Point Notation",
+					"description": "Separates the multiplier and exponent of an Euler point notation number",
+					"category": "s",
+					"dialects": [
+						"n2"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "z",
+			"name": "",
+			"meanings": [
+				{
+					"name": "Zeta Point Notation",
+					"description": "Separates the multiplier and argument of a zeta point notation number",
+					"category": "s",
+					"dialects": [
+						"n2"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "±",
+			"name": "Plus Underbar",
+			"meanings": [
+				{
+					"name": "Ball Arithmetic Notation",
+					"description": "Separates the midpoint and radius of a ball number",
+					"category": "s",
+					"dialects": [
+						"n2"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "ijk",
+			"name": "",
+			"meanings": [
+				{
+					"name": "Quaternion Notation",
+					"category": "s",
+					"dialects": [
+						"n2"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "ijkl",
+			"name": "",
+			"meanings": [
+				{
+					"name": "Octionion Notation",
+					"category": "s",
+					"dialects": [
+						"n2"
+					]
+				}
+			]
+		},
+		{
+			"glyph": "⋄",
+			"name": "Diamond",
+			"meanings": [
+				{
+					"name": "Statement Separator",
+					"category": "s",
+					"dialects": [
+						"dy",
+						"ex",
+						"vi",
+						"dz",
+						"n2"
 					]
 				}
 			]
@@ -3127,7 +3826,9 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz",
+						"n2"
 					]
 				}
 			]
@@ -3143,7 +3844,9 @@
 					"dialects": [
 						"dy",
 						"ex",
-						"vi"
+						"vi",
+						"dz",
+						"n2"
 					]
 				}
 			]
