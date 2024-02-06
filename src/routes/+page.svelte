@@ -1,6 +1,37 @@
 <script lang='ts'>
 	import glyphs from '$lib/glyphs';
-  import { Table } from '@sveltestrap/sveltestrap';
+	import type { Dialect, Glyphs } from '$lib/types';
+  import { Input, Table } from '@sveltestrap/sveltestrap';
+
+	let dialectFilter: string = '';
+	
+	function allDialects(dialects: Record<string, Dialect>, d: string[]) {
+		let changed = true;
+		const flat = d.slice();
+		while (changed) {
+			console.log(flat);
+			changed = false;
+			for (const f of flat) {
+				if (!dialects[f]) console.error('not found', f);
+				if (dialects[f].children) {
+					for (const child of dialects[f].children!) {
+						if (!flat.includes(child)) {
+							flat.push(child);
+							changed = true;
+						}
+					}
+				}
+			}
+		}
+		return [...new Set(flat)];
+	}
+
+	function filteredGlyphs(glyphs: Glyphs, dialectFilter: string) {
+		if (dialectFilter === '') return glyphs.glyphs;
+		return glyphs.glyphs
+			.map(g => ({ ...g, meanings: g.meanings.filter(m => allDialects(glyphs.dialects, m[1]).includes(dialectFilter)) }))
+			.filter(g => g.meanings);
+	}
 </script>
 
 <svelte:head>
@@ -23,6 +54,13 @@
 		<li>"Core APL" refers to primitives shared across all APL dialects, "Core Dyalog" refers to primitives shared across Dyalog, Extended Dyalog, and Dyalog Vision</li>
 	</ul>
 
+	<Input type='select' bind:value={dialectFilter}>
+		<option value=''>No filter</option>
+		{#each Object.entries(glyphs.dialects) as [val, { name }]}
+			<option value={val}>{name}</option>
+		{/each}
+	</Input>
+
 	<Table>
 		<thead>
 			<tr>
@@ -33,7 +71,7 @@
 			</tr>
 		</thead>
 		<tbody>
-			{#each glyphs.glyphs as { glyph, meanings }}
+			{#each filteredGlyphs(glyphs, dialectFilter) as { glyph, meanings }}
 				{#each meanings.entries() as [idx, [meaning, dialects]]}
 					<tr>
 						{#if idx === 0}
