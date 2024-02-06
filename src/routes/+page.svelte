@@ -87,7 +87,7 @@
 								{:else if glyph[1] === null}
 									<code class='overstrike'>{glyph[0]}</code>&nbsp;(no Unicode equivalent)
 								{:else}
-									<code class='overstrike'>{glyph[0]}</code>&nbsp;(closest Unicode equivalent(s): <code>{glyph[1]}</code>)
+									<code class='overstrike'>{glyph[0]}</code>&nbsp;(closest Unicode equivalent(s): {glyph[1]})
 								{/if}
 							</th>
 						{/if}
@@ -122,6 +122,14 @@
 	}
 	:root {
 		--bs-font-monospace: BQN386, 'BQN386 Unicode', APL385, APL333, 'Fira Code', monospace !important;
+	}
+
+	tbody th code {
+		font-size: 2em;
+	}
+
+	tbody th, tbody td {
+		vertical-align: middle;
 	}
 
 	.overstrike {
