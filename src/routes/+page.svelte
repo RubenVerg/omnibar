@@ -98,8 +98,8 @@
 						<td>
 							{glyphs.meanings[meaning]?.description ?? ''}
 							{#if glyphs.meanings[meaning]?.urls}
-								{#each glyphs.meanings[meaning].urls as url}
-									<a class='ms-2' href={url}><i class='bi bi-box-arrow-up-right' /></a>
+								{#each Object.entries(glyphs.meanings[meaning].urls ?? {}) as [type, url]}
+									<a href={url}>{glyphs.urls[type].name ?? type}</a>
 								{/each}
 							{/if}
 						</td>

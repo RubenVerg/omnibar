@@ -2,6 +2,7 @@ export interface Glyphs {
 	categories: Record<string, Category>;
 	dialects: Record<string, Dialect>;
 	meanings: Record<string, Meaning>;
+	urls: Record<string, Url>;
 	glyphs: Glyph[];
 }
 
@@ -15,6 +16,10 @@ export interface Dialect {
 	children?: string[];
 }
 
+export interface Url {
+	name: string;
+}
+
 export type GlyphRepr = string | [string, string[]] | [string, null];
 
 export interface Glyph {
@@ -26,5 +31,5 @@ export interface Meaning {
 	name: string;
 	description?: string;
 	category: string;
-	urls: string[];
+	urls?: Record<string, string>;
 }
