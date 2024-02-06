@@ -103,7 +103,7 @@ const glyphs: Glyphs = {
 		ge: d('Greater Than', undefined, { wiki: 'https://aplwiki.com/wiki/Greater_than' }),
 		isNeg: m('Is Negative?'),
 		isVisible: m('Is Visible Character?'),
-		join: m('Join', 'Merge array of arrays into single array'),
+		join: m('Join', 'Merge array of arrays into single array', { wiki: 'https://aplwiki.com/wiki/Raze' }),
 		dilate: m('Dilate', 'Expand an array of hypercomplex numbers into an array of reals', { nars2000: 'https://wiki.nars2000.org/index.php?title=Dilate' }),
 		geq: d('Greater Than or Equal To', undefined, { wiki: 'https://aplwiki.com/wiki/Greater_than_or_Equal_to' }),
 		isNonpos: m('Is Nonpositive?'),
