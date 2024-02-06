@@ -1,6 +1,6 @@
 <script lang='ts'>
-	import glyphs from '$lib/glyphs';
-	import type { Dialect, Glyphs } from '$lib/types';
+	import { categories, glyphs } from '$lib/glyphs';
+	import type { Dialect, GlyphRepr, Glyphs } from '$lib/types';
   import { Input, Table } from '@sveltestrap/sveltestrap';
 
 	let dialectFilter: string = '';
@@ -24,6 +24,62 @@
 			}
 		}
 		return [...new Set(flat)];
+	}
+
+	function escape(str: string) {
+		return str.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
+	}
+
+	function glyphRepr(glyph: GlyphRepr) {
+		if (typeof glyph === 'string') return escape(glyph)
+		else return `<span class='overstrike'>${escape(glyph[0])}</span>`;
+	}
+
+	function htmlPattern(pattern: string, glyph: string) {
+		if (glyph.includes('∘.')) pattern = pattern.replace(/(.)A/, 'A$1');
+		return [...pattern].map(ch => {
+			switch (ch) {
+				case '(':
+				case ')':
+				case '{':
+				case '}':
+					return ch;
+				case 'x':
+				case 'y':
+				case 'u':
+				case 'v':
+					return `<span style='color: ${categories.r.fgColor};'>${ch}</span>`;
+				case 'm':
+				case 'n':
+					return `<span style='color: ${categories.m.fgColor};'>${ch}</span>`;
+				case 'd':
+				case 'e':
+					return `<span style='color: ${categories.d.fgColor};'>${ch}</span>`;
+				case 'a':
+					return `<span style='color: ${categories.a.fgColor};'>${ch}</span>`;
+				case 'c':
+					return `<span style='color: ${categories.c.fgColor};'>${ch}</span>`;
+				case 'R':
+					return `<span style='color: ${categories.r.fgColor};'>${glyph}</span>`;
+				case 'M':
+					return `<span style='color: ${categories.m.fgColor};'>${glyph}</span>`;
+				case 'D':
+					return `<span style='color: ${categories.d.fgColor};'>${glyph}</span>`;
+				case 'A':
+					return `<span style='color: ${categories.a.fgColor};'>${glyph}</span>`;
+				case 'C':
+					return `<span style='color: ${categories.c.fgColor};'>${glyph}</span>`;
+				case 'H':
+					return `<span style='color: ${categories.h.fgColor};'>${glyph}</span>`;
+				default:
+					console.error(`Unknown character to colorize: ${ch}`);
+					return ch;
+			}
+		}).join('');
+	}
+
+	function patternToCategory(pattern: string | undefined): keyof typeof categories {
+		return [...pattern ?? ''].find(_ => 'A' <= _ && _ <= 'Z')?.toLowerCase?.() as keyof typeof categories ?? 's';
 	}
 
 	function filteredGlyphs(glyphs: Glyphs, dialectFilter: string) {
@@ -54,9 +110,9 @@
 		<li>"Core APL" refers to primitives shared across all APL dialects, "Core Dyalog" refers to primitives shared across Dyalog, Extended Dyalog, and Dyalog Vision</li>
 	</ul>
 
-	<div class='d-flex justify-content-center'>
-		{#each Object.values(glyphs.categories) as { name, color }}
-			<span class='d-inline-block p-2' style={`background-color: ${color};`}>{name}</span>
+	<div class='d-flex justify-content-center mb-2'>
+		{#each Object.values(categories) as { name, bgColor }}
+			<span class='d-inline-block p-2' style={`background-color: ${bgColor};`}>{name}</span>
 		{/each}
 	</div>
 
@@ -72,6 +128,7 @@
 			<tr>
 				<th scope='col'>Glyph</th>
 				<th scope='col'>Meaning name</th>
+				<th scope='col'>Meaning pattern</th>
 				<th scope='col'>Meaning description</th>
 				<th scope='col'>Meaning dialects</th>
 			</tr>
@@ -79,6 +136,7 @@
 		<tbody>
 			{#each filteredGlyphs(glyphs, dialectFilter) as { glyph, meanings }}
 				{#each meanings.entries() as [idx, [meaning, dialects]]}
+					{@const category = patternToCategory(glyphs.meanings[meaning].patterns?.[0] ?? '')}
 					<tr>
 						{#if idx === 0}
 							<th scope='row' rowspan={meanings.length} class='fw-normal'>
@@ -91,9 +149,16 @@
 								{/if}
 							</th>
 						{/if}
-						<td style={`background-color: ${glyphs.categories[glyphs.meanings[meaning]?.category]?.color};`}>
+						<td style={`background-color: ${categories[category]?.bgColor};`}>
 							<!-- <span class='badge border me-1 border-primary text-primary bg-primary-subtle'>{glyphs.categories[glyphs.meanings[meaning]?.category]?.name}</span> -->
 							{glyphs.meanings[meaning]?.name}
+						</td>
+						<td>
+							<div class='d-flex flex-column'>
+								{#each glyphs.meanings[meaning].patterns ?? [] as pattern}
+									<code class='text-body'>{@html htmlPattern(pattern, glyphRepr(glyph))}</code>
+								{/each}
+							</div>
 						</td>
 						<td>
 							{glyphs.meanings[meaning]?.description ?? ''}

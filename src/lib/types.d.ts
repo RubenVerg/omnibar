@@ -1,14 +1,8 @@
 export interface Glyphs {
-	categories: Record<string, Category>;
 	dialects: Record<string, Dialect>;
 	meanings: Record<string, Meaning>;
 	urls: Record<string, Url>;
 	glyphs: Glyph[];
-}
-
-export interface Category {
-	name: string;
-	color: string;
 }
 
 export interface Dialect {
@@ -29,7 +23,7 @@ export interface Glyph {
 
 export interface Meaning {
 	name: string;
+	patterns?: string[];
 	description?: string;
-	category: string;
 	urls?: Record<string, string>;
 }
