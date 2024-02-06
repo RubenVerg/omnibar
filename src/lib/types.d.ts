@@ -1,6 +1,7 @@
 export interface Glyphs {
 	categories: Record<string, Category>;
 	dialects: Record<string, Dialect>;
+	meanings: Record<string, Meaning>;
 	glyphs: Glyph[];
 }
 
@@ -10,18 +11,19 @@ export interface Category {
 
 export interface Dialect {
 	name: string;
+	children?: string[];
 }
 
+export type GlyphRepr = string | [string, string[]] | [string, null];
+
 export interface Glyph {
-	glyph: string | [string, string] | [string, null];
-	name: string;
-	meanings: Meaning[];
+	glyph: GlyphRepr;
+	meanings: [string, string[]][];
 }
 
 export interface Meaning {
 	name: string;
 	description?: string;
 	category: string;
-	dialects: string[];
-	urls?: string[];
+	urls: string[];
 }
