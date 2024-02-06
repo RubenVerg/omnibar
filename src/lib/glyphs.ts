@@ -379,7 +379,7 @@ const glyphs: Glyphs = {
 		gl('⎕', ['evalInput', C], ['stdout', C], ['sys', C]),
 		gl('⍞', ['stringInput', C], ['stderr', C]),
 		gl('⍠', ['variant', D, n2]),
-		gl('⌸', ['key', D, dz], ['keyVoc', vi], ['getMap', dz], ['setMap', dz]),
+		gl('⌸', ['keyI', D, dz], ['keyV', D, dz], ['keyVocI', vi], ['keyVocV', vi], ['getMap', dz], ['setMap', dz]),
 		gl('⍁', ['diagonals', dz]),
 		gl('⌺', ['stencil', D]),
 		gl('⌶', ['beam', D]),
