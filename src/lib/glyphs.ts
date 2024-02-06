@@ -14,13 +14,13 @@ const gl = (glyph: GlyphRepr, ...meanings: [string, ...string[]][]) => ({ glyph,
 
 const glyphs: Glyphs = {
 	categories: {
-		m: { name: 'Monadic function' },
-		d: { name: 'Dyadic function' },
-		a: { name: 'Monadic operator' },
-		c: { name: 'Dyadic operator' },
-		r: { name: 'Array' },
-		h: { name: 'Hyperator' },
-		s: { name: 'Syntax' },
+		m: { name: 'Monadic function', color: '#fdffb6' },
+		d: { name: 'Dyadic function', color: '#ffd6a5' },
+		a: { name: 'Monadic operator', color: '#9bf6ff' },
+		c: { name: 'Dyadic operator', color: '#a0c4ff' },
+		r: { name: 'Array', color: '#ffadad' },
+		h: { name: 'Hyperator', color: '#caffbf' },
+		s: { name: 'Syntax', color: '#ffc6ff' },
 	},
 	dialects: {
 		C: { name: 'Core APL', children: ['D', 'dz', 'n2'] },

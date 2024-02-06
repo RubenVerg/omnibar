@@ -54,6 +54,12 @@
 		<li>"Core APL" refers to primitives shared across all APL dialects, "Core Dyalog" refers to primitives shared across Dyalog, Extended Dyalog, and Dyalog Vision</li>
 	</ul>
 
+	<div class='d-flex justify-content-center'>
+		{#each Object.values(glyphs.categories) as { name, color }}
+			<span class='d-inline-block p-2' style={`background-color: ${color};`}>{name}</span>
+		{/each}
+	</div>
+
 	<Input type='select' bind:value={dialectFilter}>
 		<option value=''>No filter</option>
 		{#each Object.entries(glyphs.dialects) as [val, { name }]}
@@ -85,8 +91,8 @@
 								{/if}
 							</th>
 						{/if}
-						<td>
-							<span class='badge border me-1 border-primary text-primary bg-primary-subtle'>{glyphs.categories[glyphs.meanings[meaning]?.category]?.name}</span>
+						<td style={`background-color: ${glyphs.categories[glyphs.meanings[meaning]?.category]?.color};`}>
+							<!-- <span class='badge border me-1 border-primary text-primary bg-primary-subtle'>{glyphs.categories[glyphs.meanings[meaning]?.category]?.name}</span> -->
 							{glyphs.meanings[meaning]?.name}
 						</td>
 						<td>
@@ -99,7 +105,7 @@
 						</td>
 						<td>
 							{#each dialects as dialect}
-								<span class='badge border me-1 border-success text-success bg-success-subtle'>{glyphs.dialects[dialect]?.name}</span>
+								<span class='badge border me-1 border-secondary text-secondary bg-secondary-subtle'>{glyphs.dialects[dialect]?.name}</span>
 							{/each}
 						</td>
 					</tr>

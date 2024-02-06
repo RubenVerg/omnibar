@@ -7,6 +7,7 @@ export interface Glyphs {
 
 export interface Category {
 	name: string;
+	color: string;
 }
 
 export interface Dialect {
