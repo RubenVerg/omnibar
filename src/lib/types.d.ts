@@ -7,7 +7,7 @@ export interface Glyphs {
 
 export interface Dialect {
 	name: string;
-	children?: string[];
+	shortName: string;
 }
 
 export interface Url {

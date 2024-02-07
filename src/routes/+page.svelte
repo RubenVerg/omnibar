@@ -5,27 +5,6 @@
 
 	let dialectFilter: string = '';
 	
-	function allDialects(dialects: Record<string, Dialect>, d: string[]) {
-		let changed = true;
-		const flat = d.slice();
-		while (changed) {
-			console.log(flat);
-			changed = false;
-			for (const f of flat) {
-				if (!dialects[f]) console.error('not found', f);
-				if (dialects[f].children) {
-					for (const child of dialects[f].children!) {
-						if (!flat.includes(child)) {
-							flat.push(child);
-							changed = true;
-						}
-					}
-				}
-			}
-		}
-		return [...new Set(flat)];
-	}
-
 	function escape(str: string) {
 		return str.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
 	}
@@ -85,7 +64,7 @@
 	function filteredGlyphs(glyphs: Glyphs, dialectFilter: string) {
 		if (dialectFilter === '') return glyphs.glyphs;
 		return glyphs.glyphs
-			.map(g => ({ ...g, meanings: g.meanings.filter(m => allDialects(glyphs.dialects, m[1]).includes(dialectFilter)) }))
+			.map(g => ({ ...g, meanings: g.meanings.filter(m => m[1].includes(dialectFilter)) }))
 			.filter(g => g.meanings);
 	}
 </script>
@@ -107,7 +86,6 @@
 
 	<ul>
 		<li>Many dialects call the same primitive different names. In this list they are all grouped under a common name</li>
-		<li>"Core APL" refers to primitives shared across all APL dialects, "Core Dyalog" refers to primitives shared across Dyalog, Extended Dyalog, and Dyalog Vision</li>
 	</ul>
 
 	<div class='d-flex justify-content-center mb-2'>
@@ -122,6 +100,15 @@
 		<li><code>{@html htmlPattern('d', '')}</code>, <code>{@html htmlPattern('e', '')}</code>: Dyadic functions</li>
 		<li><code>{@html htmlPattern('a', '')}</code>: Monadic operators</li>
 		<li><code>{@html htmlPattern('c', '')}</code>: Dyadic operators</li>
+	</ul>
+
+	<ul>
+		{#each Object.values(glyphs.dialects) as { name, shortName }}
+			<li>
+				<span class='badge border me-1 border-secondary text-secondary bg-secondary-subtle'>{shortName}</span>
+				is {name}
+			</li>
+		{/each}
 	</ul>
 
 	<Input type='select' bind:value={dialectFilter}>
@@ -178,7 +165,7 @@
 						</td>
 						<td>
 							{#each dialects as dialect}
-								<span class='badge border me-1 border-secondary text-secondary bg-secondary-subtle'>{glyphs.dialects[dialect]?.name}</span>
+								<abbr title={glyphs.dialects[dialect]?.name} class='badge border me-1 border-secondary text-secondary bg-secondary-subtle'>{glyphs.dialects[dialect]?.shortName}</abbr>
 							{/each}
 						</td>
 					</tr>
