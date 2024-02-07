@@ -51,14 +51,14 @@
 					return `<span style='color: ${categories.r.fgColor};'>${ch}</span>`;
 				case 'm':
 				case 'n':
-					return `<span style='color: ${categories.m.fgColor};'>${ch}</span>`;
+					return `<span class='text-decoration-underline' style='color: ${categories.m.fgColor}; text-decoration-style: solid !important; text-decoration-thickness: 1.5px !important;'>${ch}</span>`;
 				case 'd':
 				case 'e':
-					return `<span style='color: ${categories.d.fgColor};'>${ch}</span>`;
+					return `<span class='text-decoration-underline' style='color: ${categories.d.fgColor}; text-decoration-style: double !important; text-decoration-thickness: 1.5px !important;'>${ch}</span>`;
 				case 'a':
-					return `<span style='color: ${categories.a.fgColor};'>${ch}</span>`;
+					return `<span class='text-decoration-underline fst-italic' style='color: ${categories.a.fgColor}; text-decoration-style: solid !important; text-decoration-thickness: 1.5px !important;'>${ch}</span>`;
 				case 'c':
-					return `<span style='color: ${categories.c.fgColor};'>${ch}</span>`;
+					return `<span class='text-decoration-underline fst-italic' style='color: ${categories.c.fgColor}; text-decoration-style: double !important; text-decoration-thickness: 1.5px !important;'>${ch}</span>`;
 				case 'R':
 					return `<span style='color: ${categories.r.fgColor};'>${glyph}</span>`;
 				case 'M':
@@ -116,6 +116,14 @@
 		{/each}
 	</div>
 
+	<ul>
+		<li><code>{@html htmlPattern('x', '')}</code>, <code>{@html htmlPattern('y', '')}</code>, <code>{@html htmlPattern('u', '')}</code>, <code>{@html htmlPattern('v', '')}</code>: Arrays</li>
+		<li><code>{@html htmlPattern('m', '')}</code>, <code>{@html htmlPattern('n', '')}</code>: Monadic functions</li>
+		<li><code>{@html htmlPattern('d', '')}</code>, <code>{@html htmlPattern('e', '')}</code>: Dyadic functions</li>
+		<li><code>{@html htmlPattern('a', '')}</code>: Monadic operators</li>
+		<li><code>{@html htmlPattern('c', '')}</code>: Dyadic operators</li>
+	</ul>
+
 	<Input type='select' bind:value={dialectFilter}>
 		<option value=''>No filter</option>
 		{#each Object.entries(glyphs.dialects) as [val, { name }]}
@@ -136,7 +144,7 @@
 		<tbody>
 			{#each filteredGlyphs(glyphs, dialectFilter) as { glyph, meanings }}
 				{#each meanings.entries() as [idx, [meaning, dialects]]}
-					{@const category = patternToCategory(glyphs.meanings[meaning].patterns?.[0] ?? '')}
+					{@const category = patternToCategory(glyphs.meanings[meaning]?.patterns?.[0] ?? '')}
 					<tr>
 						{#if idx === 0}
 							<th scope='row' rowspan={meanings.length} class='fw-normal'>
@@ -155,7 +163,7 @@
 						</td>
 						<td>
 							<div class='d-flex flex-column'>
-								{#each glyphs.meanings[meaning].patterns ?? [] as pattern}
+								{#each glyphs.meanings[meaning]?.patterns ?? [] as pattern}
 									<code class='text-body'>{@html htmlPattern(pattern, glyphRepr(glyph))}</code>
 								{/each}
 							</div>
