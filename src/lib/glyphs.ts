@@ -67,7 +67,7 @@ export const glyphs: Glyphs = {
 		circ: me([xDy], 'Circular Functions', 'A range of trigonometric and related functions selected using the left argument', { wiki: 'https://aplwiki.com/wiki/Circular' }),
 		fact: me([My], 'Factorial', undefined, { wiki: 'https://aplwiki.com/wiki/Factorial' }),
 		binom: me([xDy], 'Binomial Coefficient', undefined, { wiki: 'https://aplwiki.com/wiki/Binomial' }),
-		roll: me([My], 'Roll', 'Random integeme([R], s) in the range defined by the argument, or random float (0; 1) if the element is 0', { wiki: 'https://aplwiki.com/wiki/Roll' }),
+		roll: me([My], 'Roll', 'Random numbers as specified by the argument', { wiki: 'https://aplwiki.com/wiki/Roll' }),
 		deal: me([xDy], 'Deal', 'Right argument random selections from the range defined by the left argument', { wiki: 'https://aplwiki.com/wiki/Deal' }),
 		abs: me([My], 'Absolute Value', undefined, { wiki: 'https://aplwiki.com/wiki/Magnitude' }),
 		mag: me([My], 'Magnitude', undefined, { wiki: 'https://aplwiki.com/wiki/Magnitude' }),
