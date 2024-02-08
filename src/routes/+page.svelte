@@ -135,13 +135,15 @@
 					<tr>
 						{#if idx === 0}
 							<th scope='row' rowspan={meanings.length} class='fw-normal'>
-								{#if typeof glyph === 'string'}
-									<code>{glyph}</code>
-								{:else if glyph[1] === null}
-									<code class='overstrike'>{glyph[0]}</code>&nbsp;(no Unicode equivalent)
-								{:else}
-									<code class='overstrike'>{glyph[0]}</code>&nbsp;(closest Unicode equivalent(s): {glyph[1]})
-								{/if}
+								<span class='border border-secondary'>
+									{#if typeof glyph === 'string'}
+										<code>{glyph}</code>
+									{:else if glyph[1] === null}
+										<code class='overstrike'>{glyph[0]}</code>&nbsp;(no Unicode equivalent)
+									{:else}
+										<code class='overstrike'>{glyph[0]}</code>&nbsp;(closest Unicode equivalent(s): {glyph[1]})
+									{/if}
+								</span>
 							</th>
 						{/if}
 						<td style={`background-color: ${categories[category]?.bgColor};`}>
@@ -184,8 +186,11 @@
 		--bs-font-monospace: APL386, 'BQN386 Unicode', APL385, APL333, 'Fira Code', monospace !important;
 	}
 
-	tbody th code {
+	tbody th span {
 		font-size: 2em;
+		padding-inline: .25em;
+		padding-block: .1em;
+		border-radius: 2px;
 	}
 
 	tbody th, tbody td {
