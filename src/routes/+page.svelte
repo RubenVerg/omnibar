@@ -177,11 +177,11 @@
 
 <style>
 	@font-face {
-		font-family: BQN386;
-		src: url("https://dzaima.github.io/BQN386/BQN386.ttf");
+		font-family: APL386;
+		src: url("/APL386.ttf");
 	}
 	:root {
-		--bs-font-monospace: BQN386, 'BQN386 Unicode', APL385, APL333, 'Fira Code', monospace !important;
+		--bs-font-monospace: APL386, 'BQN386 Unicode', APL385, APL333, 'Fira Code', monospace !important;
 	}
 
 	tbody th code {
