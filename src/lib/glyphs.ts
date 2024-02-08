@@ -448,7 +448,7 @@ export const glyphs: Glyphs = {
 		gl('∇∇∇', ['rechyp', n2]),
 		gl('¯', ['negative', dy, ex, vi, dz, n2, a2], ['inverse', ex]),
 		gl('⌂', ['dfns', ex]),
-		gl('E', ['eS', dy, ex, vi, dz, n2]),
+		gl('E', ['eS', dy, ex, vi, dz, n2, a2]),
 		gl('e', ['eS', dy, ex, vi, dz, n2]),
 		gl('J', ['jS', dy, ex, vi, n2, a2]),
 		gl('j', ['jS', dy, ex, vi]),
