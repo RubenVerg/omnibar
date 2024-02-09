@@ -22,6 +22,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@nrsk/sigma": "^3.8.0",
 		"@sveltestrap/sveltestrap": "^6.2.3"
 	}
 }
