@@ -1,9 +1,11 @@
 <script lang='ts'>
 	import { categories, glyphs } from '$lib/glyphs';
 	import type { Dialect, GlyphRepr, Glyphs } from '$lib/types';
+	import { id, query } from '$lib/query';
   import { Input, Table } from '@sveltestrap/sveltestrap';
+	import { onMount } from 'svelte';
 
-	let dialectFilter: string = '';
+	let search: string = '';
 	
 	function escape(str: string) {
 		return str.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
@@ -61,11 +63,11 @@
 		return [...pattern ?? ''].find(_ => 'A' <= _ && _ <= 'Z')?.toLowerCase?.() as keyof typeof categories ?? 's';
 	}
 
-	function filteredGlyphs(glyphs: Glyphs, dialectFilter: string) {
-		if (dialectFilter === '') return glyphs.glyphs;
-		return glyphs.glyphs
-			.map(g => ({ ...g, meanings: g.meanings.filter(m => m[1].includes(dialectFilter)) }))
-			.filter(g => g.meanings);
+	function filteredGlyphs(glyphs: Glyphs, search: string) {
+		const withId = glyphs.glyphs.map(glyph => ({ ...glyph, meanings: glyph.meanings.map(meaning => [id(glyph, meaning), meaning] as const) }));
+		const q = query(search);
+		console.log(q);
+		return withId.map(glyph => ({ ...glyph, meanings: glyph.meanings.filter(([id]) => q.includes(id)).map(([id, meaning]) => meaning) })).filter(glyph => glyph.meanings.length);
 	}
 </script>
 
@@ -111,12 +113,11 @@
 		{/each}
 	</ul>
 
-	<Input type='select' bind:value={dialectFilter}>
-		<option value=''>No filter</option>
-		{#each Object.entries(glyphs.dialects) as [val, { name }]}
-			<option value={val}>{name}</option>
-		{/each}
-	</Input>
+	<p>
+		Search: use short names for dialects (listed above, plus <code>all</code>), <code>|</code> for union, <code>&</code> for intersection, <code>~</code> for difference.
+	</p>
+	
+	<Input type='text' class='text-monospace' bind:value={search}></Input>
 
 	<Table>
 		<thead>
@@ -129,7 +130,7 @@
 			</tr>
 		</thead>
 		<tbody>
-			{#each filteredGlyphs(glyphs, dialectFilter) as { glyph, meanings }}
+			{#each filteredGlyphs(glyphs, search) as { glyph, meanings }}
 				{#each meanings.entries() as [idx, [meaning, dialects]]}
 					{@const category = patternToCategory(glyphs.meanings[meaning]?.patterns?.[0] ?? '')}
 					<tr>
