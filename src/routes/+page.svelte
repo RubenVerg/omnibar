@@ -87,6 +87,7 @@
 
 	<ul>
 		<li>Many dialects call the same primitive different names. In this list they are all grouped under a common name</li>
+		<li>{query('all').length} meanings!</li>
 	</ul>
 
 	<div class='d-flex justify-content-center mb-2'>
