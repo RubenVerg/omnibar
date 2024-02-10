@@ -66,7 +66,6 @@
 	function filteredGlyphs(glyphs: Glyphs, search: string) {
 		const withId = glyphs.glyphs.map(glyph => ({ ...glyph, meanings: glyph.meanings.map(meaning => [id(glyph, meaning), meaning] as const) }));
 		const q = query(search);
-		console.log(q);
 		return withId.map(glyph => ({ ...glyph, meanings: glyph.meanings.filter(([id]) => q.includes(id)).map(([id, meaning]) => meaning) })).filter(glyph => glyph.meanings.length);
 	}
 </script>
