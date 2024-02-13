@@ -405,7 +405,7 @@ export const glyphs: Glyphs = {
 		gl('∘.', ['outerProduct', dy, ex, vi, dz, n2, a2, gn, i1, i2]),
 		gl('∘', ['compose', dy, ex, vi, dz, n2], ['after', dy, ex, vi, dz, n2], ['bind', dy, ex, vi, dz, n2], ['matrixProduct', gn]),
 		gl('⍛', ['before', ex, vi, dz]),
-		gl('⍤', ['compose', dy, ex, vi, dz, n2], ['atop', dy, ex, vi, dz, n2], ['atRank', dy, ex, vi, n2, gn]),
+		gl('⍤', ['compose', dy, ex, vi, dz, n2], ['atop', dy, ex, vi, dz, n2], ['atRank', dy, ex, vi, n2, gn, i2]),
 		gl('⍥', ['compose', dy, ex, vi, dz, n2], ['over', dy, ex, vi, dz, n2], ['atDepth', ex, vi]),
 		gl('⍢', ['under', ex, vi, dz]),
 		gl('ᐵ', ['eachLeft', dz]),
