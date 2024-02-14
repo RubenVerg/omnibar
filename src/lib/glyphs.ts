@@ -317,7 +317,7 @@ export const glyphs: Glyphs = {
 		ijkS: sy('Quaternion Notation'),
 		ijklS: sy('Octonion Notation'),
 		sep: sy('Statement Separator'),
-		comment: sy('Comment', 'Start a comment that ends at the end of the line'),
+		comment: sy('Comment', 'Start a comment that ends at the end of the line', { wiki: 'https://aplwiki.com/wiki/Comment' }),
 		char: sy('Character Literal', 'Character vector/scalar delimiter', { wiki: 'https://aplwiki.com/wiki/String' }),
 		str: sy('String Literal', 'Like a character literal, but with escapes and always a vector'),
 		spawn: me([mAy, xdAy], 'Spawn', 'Run the operand in a green thread', { wiki: 'https://aplwiki.com/wiki/Spawn' }),
