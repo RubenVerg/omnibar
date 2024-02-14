@@ -160,7 +160,7 @@
 							{glyphs.meanings[meaning]?.description ?? ''}
 							{#if glyphs.meanings[meaning]?.urls}
 								{#each Object.entries(glyphs.meanings[meaning].urls ?? {}) as [type, url]}
-									<a href={url}>{glyphs.urls[type].name ?? type}</a>
+									<a href={url}>{glyphs.urls[type]?.name}</a>
 								{/each}
 							{/if}
 						</td>
