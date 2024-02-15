@@ -71,7 +71,7 @@
 </script>
 
 <svelte:head>
-	<title>Omnibar</title>
+	<title>Omnibar: the ultimate language toolbar</title>
 </svelte:head>
 
 <div class='mx-3 my-4'>
