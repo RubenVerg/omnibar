@@ -97,7 +97,7 @@
 
 	<div class='row'>
 		{#each Object.values(glyphs.dialects) as { name, shortName }}
-			<span class='d-inline-block col-2'>
+			<span class='d-inline-block col-auto'>
 				<span class='badge border me-1 border-secondary text-secondary bg-secondary-subtle'>{shortName}</span> {name} <span class='me-2' />
 			</span>
 		{/each}
