@@ -75,20 +75,11 @@
 </svelte:head>
 
 <div class='mx-3 my-4'>
-	<h1>Omnibar</h1>
+	<h1>Omnibar <span class='float-end fs-6'><a href='https://github.com/rubenverg/omnibar'><i class='bi bi-github me-1' />GitHub</a></span></h1>
 
-	<p>
-		Omnibar: the ultimate language toolbar with support for all <abbr title='Is there a dialect not listed? Open a PR or an issue!'>(?)</abbr> APL dialects.
-	</p>
-	
-	<p>
-		<a href='https://github.com/rubenverg/omnibar'><i class='bi bi-github me-2' />GitHub</a>
-	</p>
-
-	<ul>
-		<li>Many dialects call the same primitive different names. In this list they are all grouped under a common name</li>
-		<li>{query('all').length} meanings!</li>
-	</ul>
+	<div>
+		Omnibar: the ultimate language toolbar with support for all <abbr title='Is there a dialect not listed? Open a PR or an issue!'>(?)</abbr> APL dialects, and currently has {query('all').length} meanings. Many dialects call the same primitive different names; in this list they are all grouped under a common name.
+	</div>
 
 	<div class='d-flex justify-content-center mb-2'>
 		{#each Object.values(categories) as { name, bgColor }}
@@ -96,28 +87,37 @@
 		{/each}
 	</div>
 
-	<ul>
-		<li><code>{@html htmlPattern('x', '')}</code>, <code>{@html htmlPattern('y', '')}</code>, <code>{@html htmlPattern('u', '')}</code>, <code>{@html htmlPattern('v', '')}</code>: Arrays</li>
-		<li><code>{@html htmlPattern('m', '')}</code>, <code>{@html htmlPattern('n', '')}</code>: Monadic functions</li>
-		<li><code>{@html htmlPattern('d', '')}</code>, <code>{@html htmlPattern('e', '')}</code>: Dyadic functions</li>
-		<li><code>{@html htmlPattern('a', '')}</code>: Monadic operators</li>
-		<li><code>{@html htmlPattern('c', '')}</code>: Dyadic operators</li>
-	</ul>
-
-	<ul>
-		{#each Object.values(glyphs.dialects) as { name, shortName }}
-			<li>
-				<span class='badge border me-1 border-secondary text-secondary bg-secondary-subtle'>{shortName}</span>
-				is {name}
-			</li>
-		{/each}
-	</ul>
-
 	<p>
-		Search: use short names for dialects (listed above, plus <code>all</code>), <code>|</code> for union, <code>&</code> for intersection, <code>~</code> for difference.
+		<code>{@html htmlPattern('x', '')}</code>, <code>{@html htmlPattern('y', '')}</code>, <code>{@html htmlPattern('u', '')}</code>, <code>{@html htmlPattern('v', '')}</code>: Arrays <span class='me-2' />
+		<code>{@html htmlPattern('m', '')}</code>, <code>{@html htmlPattern('n', '')}</code>: Monadic functions <span class='me-2' />
+		<code>{@html htmlPattern('d', '')}</code>, <code>{@html htmlPattern('e', '')}</code>: Dyadic functions <span class='me-2' />
+		<code>{@html htmlPattern('a', '')}</code>: Monadic operators <span class='me-2' />
+		<code>{@html htmlPattern('c', '')}</code>: Dyadic operators <span class='me-2' />
 	</p>
-	
-	<Input type='text' class='text-monospace' bind:value={search}></Input>
+
+	<div class='row'>
+		{#each Object.values(glyphs.dialects) as { name, shortName }}
+			<span class='d-inline-block col-2'>
+				<span class='badge border me-1 border-secondary text-secondary bg-secondary-subtle'>{shortName}</span> {name} <span class='me-2' />
+			</span>
+		{/each}
+	</div>
+
+	<div class='row align-items-center pt-2'>
+		<div class='col-1'>
+			<label for='search'>Search</label>
+		</div>
+
+		<div class='col-4'>
+			<Input type='text' id='search' bind:value={search}></Input>
+		</div>
+		
+		<div class='col-7'>
+			<span class='form-text'>
+				Use short names for dialects (listed above, plus <code>all</code>), <code>|</code> for union, <code>&</code> for intersection, <code>~</code> for difference.
+			</span>
+		</div>
+	</div>
 
 	<Table>
 		<thead>
