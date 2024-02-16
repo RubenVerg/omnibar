@@ -83,7 +83,7 @@
 
 	<div class='d-flex justify-content-center mb-2'>
 		{#each Object.values(categories) as { name, bgColor }}
-			<span class='d-inline-block p-2' style={`background-color: ${bgColor};`}>{name}</span>
+			<span class='d-inline-block p-2 mx-1' style={`background-color: ${bgColor};`}>{name}</span>
 		{/each}
 	</div>
 
