@@ -360,7 +360,7 @@ export const glyphs: Glyphs = {
 		approxEq: me([xDy], 'Approximately Equal To', undefined, { gh: 'https://github.com/abrudz/ngn-apl/blob/master/apl.js#L34' }),
 		valences: me([mCey, xmCey], 'Valences', 'Apply the left function if called monadically and the right function if called dyadically'),
 		raise: me([My], 'Raise', 'Raise an exception'),
-		idElem: me(['???'], 'Identity Element', '???')
+		idElem: me([dCvy], 'Identity Element', 'Set the identity element for a function'),
 	},
 	glyphs: [
 		gl('+', ['plusId', dy, ex, vi, dz, n2, a2, i1, i2, ax, ng], ['conj', dy, ex, vi, n2, a2, gn, i2, ng], ['add', dy, ex, vi, dz, n2, a2, gn, i1, i2, ax, ng]),
