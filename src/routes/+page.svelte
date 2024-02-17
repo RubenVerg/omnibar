@@ -97,7 +97,9 @@
 
 	<div class='row'>
 		{#each Object.values(glyphs.dialects) as { name, shortName }}
-			<span class='d-inline-block col-auto'>
+			<!-- svelte-ignore a11y-click-events-have-key-events -->
+			<!-- svelte-ignore a11y-no-static-element-interactions -->
+			<span class='d-inline-block col-auto' on:click={() => search = shortName}>
 				<span class='badge border me-1 border-secondary text-secondary bg-secondary-subtle'>{shortName}</span> {name} <span class='me-2' />
 			</span>
 		{/each}
@@ -108,11 +110,11 @@
 			<label for='search'>Search</label>
 		</div>
 
-		<div class='col-4'>
+		<div class='col-5'>
 			<Input type='text' id='search' bind:value={search}></Input>
 		</div>
 		
-		<div class='col-7'>
+		<div class='col-6'>
 			<span class='form-text'>
 				Use short names for dialects (listed above, plus <code>all</code>), <code>|</code> for union, <code>&</code> for intersection, <code>~</code> for difference.
 			</span>
