@@ -24,6 +24,8 @@
 				case ')':
 				case '{':
 				case '}':
+				case '[':
+				case ']':
 					return ch;
 				case 'x':
 				case 'y':
