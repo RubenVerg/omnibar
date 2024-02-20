@@ -105,10 +105,13 @@
 	<h1>Omnibar <span class='float-end fs-6'><a href='https://github.com/rubenverg/omnibar'><i class='bi bi-github me-1' />GitHub</a></span></h1>
 
 	<div>
-		Omnibar: the ultimate language toolbar with support for all <abbr title='Is there a dialect not listed? Open a PR or an issue!'>(?)</abbr> APL dialects, and currently has {query('all').length} meanings. Many dialects call the same primitive different names; in this list they are all grouped under a common name.
+		Omnibar: the ultimate language toolbar with support for all <abbr title='Is there a dialect not listed? Open a PR or an issue!'>(?)</abbr> APL dialects, and currently has {query('all').length} meanings.
+		Many dialects call the same primitive different names; in this list they are all grouped under a common name.
+		<!-- svelte-ignore a11y-invalid-attribute -->
+		You can also <a href='#' on:click={download}><i class='bi bi-download me-1' />Download a JSON file</a> that contains all glyphs and meanings.
 	</div>
 
-	<div class='d-flex justify-content-center mb-2'>
+	<div class='d-flex justify-content-center my-2'>
 		{#each Object.values(categories) as { name, bgColor }}
 			<span class='d-inline-block p-2 mx-1' style={`background-color: ${bgColor};`}>{name}</span>
 		{/each}
@@ -141,15 +144,10 @@
 			<Input type='text' id='search' bind:value={search}></Input>
 		</div>
 		
-		<div class='col-5'>
+		<div class='col-6'>
 			<span class='form-text'>
 				Use short names for dialects (listed above, plus <code>all</code>), <code>|</code> for union, <code>&</code> for intersection, <code>~</code> for difference.
 			</span>
-		</div>
-
-		<div class='col-1'>
-			<!-- svelte-ignore a11y-invalid-attribute -->
-			<a href='#' on:click={download}><i class='bi bi-download me-1' />Download glyphs JSON</a>
 		</div>
 	</div>
 
