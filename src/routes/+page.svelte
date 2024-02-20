@@ -2,10 +2,35 @@
 	import { categories, glyphs } from '$lib/glyphs';
 	import type { Dialect, GlyphRepr, Glyphs } from '$lib/types';
 	import { id, query } from '$lib/query';
-  import { Input, Table } from '@sveltestrap/sveltestrap';
+  import { Button, Input, Table } from '@sveltestrap/sveltestrap';
 	import { onMount } from 'svelte';
 
 	let search: string = '';
+
+	const flatGlyphs = glyphs.glyphs.flatMap(g =>
+		g.meanings
+			.map(_ => _[0])
+			.map(_ => glyphs.meanings[_])
+			.map((m, idx) => [
+				g.glyph,
+				m.patterns,
+				m.name,
+				m.description ?? '',
+				Object.values(m.urls ?? {}),
+				g.meanings[idx][1].map(_ => glyphs.dialects[_].shortName)
+			])
+	);
+
+	function download() {
+		const blob = new Blob([JSON.stringify(flatGlyphs)], { type: 'application/json' });
+		const url = URL.createObjectURL(blob);
+		const a = document.createElement('a');
+		a.setAttribute('download', 'glyphs.json');
+		a.setAttribute('href', url);
+		document.body.appendChild(a);
+		a.click();
+		document.body.removeChild(a);
+	}
 	
 	function escape(str: string) {
 		return str.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
@@ -116,10 +141,15 @@
 			<Input type='text' id='search' bind:value={search}></Input>
 		</div>
 		
-		<div class='col-6'>
+		<div class='col-5'>
 			<span class='form-text'>
 				Use short names for dialects (listed above, plus <code>all</code>), <code>|</code> for union, <code>&</code> for intersection, <code>~</code> for difference.
 			</span>
+		</div>
+
+		<div class='col-1'>
+			<!-- svelte-ignore a11y-invalid-attribute -->
+			<a href='#' on:click={download}><i class='bi bi-download me-1' />Download glyphs JSON</a>
 		</div>
 	</div>
 

@@ -498,6 +498,7 @@ export const glyphs: Glyphs = {
 		gl('↗', ['raise', ng]),
 		gl('⫽', ['compress', ka], ['replicate', ka]),
 		gl('∵', ['bitwise', ka]),
+		gl('∥', ['parallel', ka]),
 		gl('˝', ['inverseF', ka]),
 		gl('{}', ['dfn', dy, ex, vi, dz, n2, gn, ng, ka], ['dop', dy, ex, vi, dz, n2, gn, ng], ['dhyp', n2], ['shyRes', dy, ex, vi, n2, a2, gn], ['optLeft', dy, ex, vi]),
 		gl('⍺', ['larg', dy, ex, vi, dz, n2, gn, ng, ka], ['pictureFormat', ax]),
