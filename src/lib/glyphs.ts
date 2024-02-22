@@ -443,7 +443,7 @@ export const glyphs: Glyphs = {
 		gl('⍨', ['constant', dy, ex, vi, dz], ['commute', dy, ex, vi, dz, n2, gn, i2, ng, ka, aw], ['duplicate', dy, ex, vi, dz, n2, gn, i2, ng, ka]),
 		gl('⍣', ['repeat', dy, ex, vi, dz, n2, ng, ka], ['until', dy, ex, vi, dz, n2, ng, ka]),
 		gl('⍡', ['cumulativeRepeat', dz], ['convolution', n2]),
-		gl('.', ['innerProduct', dy, ex, vi, dz, n2, a2, gn, i1, i2, ax, ng, ka, aw], ['alternant', n2], ['member', dy, ex, vi], ['decimal', dy, ex, vi, dz, n2, a2, gn, i1, i2, ax, ng, ka, aw]),
+		gl('.', ['innerProduct', dy, ex, vi, dz, n2, a2, gn, i1, i2, ax, ng, ka, aw], ['alternant', n2], ['member', dy, ex, vi, dz, gn, aw], ['decimal', dy, ex, vi, dz, n2, a2, gn, i1, i2, ax, ng, ka, aw]),
 		gl('∙', ['innerProduct', ex], ['alternant', ex]),
 		gl('∘.', ['outerProduct', dy, ex, vi, dz, n2, a2, gn, i1, i2, ax, ng, aw]),
 		gl('∘', ['compose', dy, ex, vi, dz, n2, ng], ['after', dy, ex, vi, dz, n2, ng, ka], ['bind', dy, ex, vi, dz, n2, ng], ['matrixProduct', gn], ['withe', ka]),
