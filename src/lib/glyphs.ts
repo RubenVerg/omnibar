@@ -396,7 +396,7 @@ export const glyphs: Glyphs = {
 		gl('○', ['piT', dy, ex, vi, dz, n2, a2, gn, i1, i2, ax, ng, aw, th, sv], ['circ', dy, ex, vi, dz, n2, a2, gn, i1, i2, ax, ng, aw, th, sv]),
 		gl('!', ['fact', dy, ex, vi, dz, n2, a2, gn, i1, i2, ax, ng, ka, aw, th, sv], ['binom', dy, ex, vi, dz, n2, a2, gn, i1, i2, ax, ng, ka, aw, th, sv]),
 		gl('?', ['roll', dy, ex, vi, dz, n2, a2, gn, i1, i2, ax, ng, ka, aw, th, sv], ['deal', dy, ex, vi, dz, n2, a2, gn, i1, i2, ax, ng, ka, aw, th, sv]),
-		gl('|', ['abs', dy, ex, vi, dz, n2, a2, gn, i1, i2, ax, ng, ka, aw, th, sv], ['mag', dy, ex, vi, n2, a2, gn, i2, ng, ka], ['mod', dy, ex, vi, dz, n2, a2, gn, i2, ax, ng, ka, aw, th, sv], ['caseFold', ex]),
+		gl('|', ['abs', dy, ex, vi, dz, n2, a2, gn, i1, i2, ax, ng, ka, aw, th, sv], ['mag', dy, ex, vi, n2, a2, gn, i2, ng, ka], ['mod', dy, ex, vi, dz, n2, a2, gn, i1, i2, ax, ng, ka, aw, th, sv], ['caseFold', ex]),
 		gl('⌈', ['ceil', dy, ex, vi, dz, n2, a2, gn, i1, i2, ax, ng, ka, aw, th, sv], ['max', dy, ex, vi, dz, n2, a2, gn, i1, i2, ax, ng, ka, aw, th, sv], ['toUpper', ex, dz]),
 		gl('⌊', ['floor', dy, ex, vi, dz, n2, a2, gn, i1, i2, ax, ng, ka, aw, th, sv], ['min', dy, ex, vi, dz, n2, a2, gn, i1, i2, ax, ng, ka, aw, th, sv], ['toLower', ex, dz]),
 		gl('⊥', ['decode', dy, ex, vi, dz, n2, a2, gn, i1, i2, ax, ng, ka, aw, th, sv], ['decode2', ex, dz]),
