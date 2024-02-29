@@ -385,6 +385,7 @@ export const glyphs: Glyphs = {
 		bin: sy('Binary Number'),
 		ieeeFloat: sy('IEEE Float', 'Floating point number as a hex representation of an IEEE double'),
 		adjacent: sy('Adjacent Output', 'Print multiple arrays next to each other'),
+		digSep: sy('Digit Separator', 'Ignored, separates digits for readability'),
 	},
 	glyphs: [
 		gl('+', ['plusId', dy, ex, vi, dz, n2, a2, i1, i2, ax, ng, ka, aw, th, sv, al], ['conj', dy, ex, vi, n2, a2, gn, i2, ng, ka, al], ['add', dy, ex, vi, dz, n2, a2, gn, i1, i2, ax, ng, ka, aw, th, sv, al]),
@@ -545,7 +546,7 @@ export const glyphs: Glyphs = {
 		gl('b', ['bS', n2]),
 		gl('g', ['gS', n2]),
 		gl('p', ['pS', n2]),
-		gl('r', ['rS', n2]),
+		gl('r', ['rS', n2, al]),
 		gl('v', ['vS', n2]),
 		gl('x', ['xS', n2]),
 		gl('z', ['zS', n2]),
@@ -564,5 +565,6 @@ export const glyphs: Glyphs = {
 		gl('"', ['str', dz, gn, ka], ['char', ax, aw]),
 		gl('λ', ['createFnRef', ka]),
 		gl('«»', ['fork', ka]),
+		gl('_', ['digSep']),
 	],
 };
