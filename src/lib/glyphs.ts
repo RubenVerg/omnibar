@@ -462,7 +462,7 @@ export const glyphs: Glyphs = {
 		gl('⍡', ['cumulativeRepeat', dz], ['convolution', n2]),
 		gl('.', ['innerProduct', dy, ex, vi, dz, n2, a2, gn, i1, i2, ax, ng, ka, aw, th, sv, al, co, sa], ['alternant', n2, sa], ['member', dy, ex, vi, dz, gn, aw, co], ['decimal', dy, ex, vi, dz, n2, a2, gn, i1, i2, ax, ng, ka, aw, th, sv, al, co, sa], ['tie', sa], ['repeat', sa]),
 		gl('∙', ['innerProduct', ex], ['alternant', ex]),
-		gl('∘.', ['outerProduct', dy, ex, vi, dz, n2, a2, gn, i1, i2, ax, ng, aw, th, sv, al, co, sa]),
+		gl('∘.', ['outerProduct', dy, ex, vi, dz, n2, a2, gn, i1, i2, ax, ng, ka, aw, th, sv, al, co, sa]),
 		gl('∘', ['compose', dy, ex, vi, dz, n2, ng, al, co], ['after', dy, ex, vi, dz, n2, ng, ka, al, co], ['bind', dy, ex, vi, dz, n2, ng, al, co], ['matrixProduct', gn], ['withe', ka]),
 		gl('⍛', ['before', ex, vi, dz, ka, al]),
 		gl('⍤', ['compose', dy, ex, vi, dz, n2, al, co, sa], ['atop', dy, ex, vi, dz, n2, al, co], ['atRank', dy, ex, vi, n2, gn, i2, ka, al, co, sa], ['over', sa], ['cut', sa]),
