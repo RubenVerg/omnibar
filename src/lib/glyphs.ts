@@ -235,7 +235,7 @@ export const glyphs: Glyphs = {
 		before: me([mCey, xmCey], 'Before', 'Preprocess the left argument to a function with another function', { wiki: 'https://aplwiki.com/wiki/Reverse_Compose' }),
 		atop: me([xmCey], 'Atop', 'Call a monad using the result of a dyad as the argument', { wiki: 'https://aplwiki.com/wiki/Atop_(operator)' }),
 		atRank: me([mCvy, xdCvy], 'Rank', 'Apply a function at a specified rank', { wiki: 'https://aplwiki.com/wiki/Rank_(operator)' }),
-		over: me([xdCey], 'Over', 'Preprocess all arguments to a function with another function', { wiki: 'https://aplwiki.com/wiki/Over' }),
+		over: me([xdCny], 'Over', 'Preprocess all arguments to a function with another function', { wiki: 'https://aplwiki.com/wiki/Over' }),
 		atDepth: me([mCvy, xdCvy], 'Depth', 'Apply a function at a specified depth', { wiki: 'https://aplwiki.com/wiki/Depth_(operator)' }),
 		under: me([mCny, xdCny], 'Under', 'Apply a function, then another function, then the first function\'s inverse', { wiki: 'https://aplwiki.com/wiki/Under' }),
 		eachLeft: me([xdAy], 'Each Left', 'Each, only on the left argument', { gh: 'https://github.com/dzaima/APL/blob/master/docs/chars.txt#L74' }),
