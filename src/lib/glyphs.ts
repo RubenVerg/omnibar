@@ -606,6 +606,7 @@ export const glyphs: Glyphs = {
 		gl('"""', ['multilineString', gn]),
 		gl('λ', ['createFnRef', ka]),
 		gl('«»', ['fork', ka], ['scalStr', a6]),
+		gl('««»»', ['multilineString', a6]),
 		gl('_', ['digSep', al]),
 		gl('➥', ['lineCont', n2]),
 	],
