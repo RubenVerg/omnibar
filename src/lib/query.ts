@@ -23,7 +23,7 @@ const union = P.map(P.sequence(
 	setLeft,
 	P.oneOf('|∪'),
 	set,
-), (([left, _, right]) => [...new Set(...left, ...right)] as S));
+), (([left, _, right]) => [...left, ...right.filter(_ => !left.includes(_))] as S));
 const intersection = P.map(P.sequence(
 	setLeft,
 	P.oneOf('&∩'),
