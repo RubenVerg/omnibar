@@ -35,7 +35,7 @@ const difference = P.map(P.sequence(
 	set,
 ), (([left, _, right]) => left.filter(_ => !right.includes(_)) as S));
 
-set.with(P.takeMid(P.optional(P.whitespace()), P.choice(P.attempt(union), P.attempt(intersection), P.attempt(difference), parens, identifier), P.optional(P.whitespace())));
+set.with(P.takeMid(P.optional(P.whitespace()), P.choice(union, intersection, difference, parens, identifier), P.optional(P.whitespace())));
 setLeft.with(P.takeMid(P.optional(P.whitespace()), P.choice(parens, identifier), P.optional(P.whitespace())));
 
 export function query(str: string) {
