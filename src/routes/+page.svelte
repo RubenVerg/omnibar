@@ -46,7 +46,7 @@
 	}
 
 	function htmlPattern(pattern: string, glyph: string) {
-		if (glyph.includes('∘.')) pattern = pattern.replace(/(.)A/, 'A$1');
+		if (glyph.includes('∘.') || glyph.includes('∘•')) pattern = pattern.replace(/(.)A/, 'A$1');
 		return [...pattern].map(ch => {
 			switch (ch) {
 				case '(':
