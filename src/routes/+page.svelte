@@ -5,7 +5,11 @@
   import { Button, Input, Table } from '@sveltestrap/sveltestrap';
 	import { onMount } from 'svelte';
 
+	let filter: string = '';
 	let search: string = '';
+	let includeGlyph: boolean = true;
+	let includeName: boolean = true;
+	let includeDesc: boolean = false;
 
 	const flatGlyphs = glyphs.glyphs.flatMap(g =>
 		g.meanings
@@ -90,10 +94,31 @@
 		return [...pattern ?? ''].find(_ => 'A' <= _ && _ <= 'Z')?.toLowerCase?.() as keyof typeof categories ?? 's';
 	}
 
-	function filteredGlyphs(glyphs: Glyphs, search: string) {
+	function filteredGlyphs(glyphs: Glyphs, filter: string): Glyphs {
 		const withId = glyphs.glyphs.map(glyph => ({ ...glyph, meanings: glyph.meanings.map(meaning => [id(glyph, meaning), meaning] as const) }));
-		const q = query(search);
-		return withId.map(glyph => ({ ...glyph, meanings: glyph.meanings.filter(([id]) => q.includes(id)).map(([id, meaning]) => meaning) })).filter(glyph => glyph.meanings.length);
+		const q = query(filter);
+		return { ...glyphs, glyphs: withId.map(glyph => ({ ...glyph, meanings: glyph.meanings.filter(([id]) => q.includes(id)).map(([id, meaning]) => meaning) })).filter(glyph => glyph.meanings.length) };
+	}
+
+	function searchedGlyphs(glyphs: Glyphs, search: string, includeGlyph: boolean, includeName: boolean, includeDesc: boolean): Glyphs {
+		search = search.trim().toLowerCase();
+		if (search == '') return glyphs;
+		console.log(search, includeGlyph, includeName, includeDesc);
+		return { ...glyphs, glyphs: glyphs.glyphs.flatMap(glyph => {
+			let ret = false;
+			if (includeGlyph && glyph.glyph.includes(search)) ret = true;
+			const filtered = { ...glyph, meanings: glyph.meanings.filter(meaning => {
+				const m = glyphs.meanings[meaning[0]];
+				if (includeName) {
+					if (m.name.toLowerCase().includes(search)) { ret = true; return true; }
+				}
+				if (includeDesc) {
+					if ((m.description ?? '').toLowerCase().includes(search)) { ret = true; return true; }
+				}
+				if (!includeName && !includeDesc) return true; else return false;
+			}) };
+			if (ret) return [filtered]; else return [];
+		}) };
 	}
 </script>
 
@@ -129,7 +154,7 @@
 		{#each Object.values(glyphs.dialects) as { name, shortName }}
 			<!-- svelte-ignore a11y-click-events-have-key-events -->
 			<!-- svelte-ignore a11y-no-static-element-interactions -->
-			<span class='d-inline-block col-auto' on:click={() => search = shortName}>
+			<span class='d-inline-block col-auto' on:click={() => filter = shortName}>
 				<span class='badge border me-1 border-secondary text-secondary bg-secondary-subtle'>{shortName}</span> {name} <span class='me-2' />
 			</span>
 		{/each}
@@ -139,9 +164,27 @@
 		<div class='col-1'>
 			<label for='search'>Search</label>
 		</div>
+		<div class='col-5'>
+			<Input type='text' id='search' bind:value={search} />
+		</div>
+		<div class='col-2'>
+			<Input type='checkbox' id='includeGlyph' label='Include glyph' checked on:input={() => { includeGlyph = !includeGlyph; }} />
+		</div>
+		<div class='col-2'>
+			<Input type='checkbox' id='includeName' label='Include name' checked on:input={() => { includeName = !includeName; }} />
+		</div>
+		<div class='col-2'>
+			<Input type='checkbox' id='includeDesc' label='Include description' on:input={() => { includeDesc = !includeDesc; }} />
+		</div>
+	</div>
+
+	<div class='row align-items-center pt-2'>
+		<div class='col-1'>
+			<label for='filter'>Filter by dialect</label>
+		</div>
 
 		<div class='col-5'>
-			<Input type='text' id='search' bind:value={search}></Input>
+			<Input type='text' id='filter' bind:value={filter} />
 		</div>
 		
 		<div class='col-6'>
@@ -162,7 +205,8 @@
 			</tr>
 		</thead>
 		<tbody>
-			{#each filteredGlyphs(glyphs, search) as { glyph, meanings }}
+			{#key includeGlyph}{#key includeName}{#key includeDesc}
+			{#each searchedGlyphs(filteredGlyphs(glyphs, filter), search, includeGlyph, includeName, includeDesc).glyphs as { glyph, meanings }}
 				{#each meanings.entries() as [idx, [meaning, dialects]]}
 					{@const category = patternToCategory(glyphs.meanings[meaning]?.patterns?.[0] ?? '')}
 					<tr>
@@ -204,6 +248,7 @@
 					</tr>
 				{/each}
 			{/each}
+			{/key}{/key}{/key}
 		</tbody>
 	</Table>
 </div>
