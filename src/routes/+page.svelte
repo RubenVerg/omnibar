@@ -103,7 +103,6 @@
 	function searchedGlyphs(glyphs: Glyphs, search: string, includeGlyph: boolean, includeName: boolean, includeDesc: boolean): Glyphs {
 		search = search.trim().toLowerCase();
 		if (search == '') return glyphs;
-		console.log(search, includeGlyph, includeName, includeDesc);
 		return { ...glyphs, glyphs: glyphs.glyphs.flatMap(glyph => {
 			let ret = false;
 			if (includeGlyph && glyph.glyph.includes(search)) ret = true;
@@ -115,7 +114,7 @@
 				if (includeDesc) {
 					if ((m.description ?? '').toLowerCase().includes(search)) { ret = true; return true; }
 				}
-				if (!includeName && !includeDesc) return true; else return false;
+				if (!includeName && !includeDesc) return true; else return ret;
 			}) };
 			if (ret) return [filtered]; else return [];
 		}) };
