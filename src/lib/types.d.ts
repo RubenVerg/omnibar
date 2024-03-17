@@ -22,7 +22,7 @@ export interface Glyph {
 }
 
 export interface Meaning {
-	name: string;
+	names: string[];
 	patterns?: string[];
 	description?: string;
 	urls?: Record<string, string>;

@@ -18,10 +18,10 @@
 			.map((m, idx) => [
 				g.glyph,
 				m.patterns,
-				m.name,
+				m.names[0],
 				m.description ?? '',
 				Object.values(m.urls ?? {}),
-				g.meanings[idx][1].map(_ => glyphs.dialects[_].shortName)
+				g.meanings[idx][1].map(_ => glyphs.dialects[_].shortName),
 			])
 	);
 
@@ -109,7 +109,7 @@
 			const filtered = { ...glyph, meanings: glyph.meanings.filter(meaning => {
 				const m = glyphs.meanings[meaning[0]];
 				if (includeName) {
-					if (m.name.toLowerCase().includes(search)) { ret = true; return true; }
+					if (m.names.some(name => name.toLowerCase().includes(search))) { ret = true; return true; }
 				}
 				if (includeDesc) {
 					if ((m.description ?? '').toLowerCase().includes(search)) { ret = true; return true; }
@@ -222,7 +222,7 @@
 						{/if}
 						<td style={`background-color: ${categories[category]?.bgColor};`}>
 							<!-- <span class='badge border me-1 border-primary text-primary bg-primary-subtle'>{glyphs.categories[glyphs.meanings[meaning]?.category]?.name}</span> -->
-							{glyphs.meanings[meaning]?.name}
+							{glyphs.meanings[meaning]?.names?.[0]}
 						</td>
 						<td>
 							<div class='d-flex flex-column'>
