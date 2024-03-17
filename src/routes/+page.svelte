@@ -104,8 +104,8 @@
 		search = search.trim().toLowerCase();
 		if (search == '') return glyphs;
 		return { ...glyphs, glyphs: glyphs.glyphs.flatMap(glyph => {
+			if (includeGlyph && glyph.glyph.includes(search)) return glyph;
 			let ret = false;
-			if (includeGlyph && glyph.glyph.includes(search)) ret = true;
 			const filtered = { ...glyph, meanings: glyph.meanings.filter(meaning => {
 				const m = glyphs.meanings[meaning[0]];
 				if (includeName) {
@@ -114,7 +114,7 @@
 				if (includeDesc) {
 					if ((m.description ?? '').toLowerCase().includes(search)) { ret = true; return true; }
 				}
-				if (!includeName && !includeDesc) return true; else return ret;
+				if (!includeName && !includeDesc) return true; else return false;
 			}) };
 			if (ret) return [filtered]; else return [];
 		}) };
