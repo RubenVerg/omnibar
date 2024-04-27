@@ -22,7 +22,7 @@
 
 	$: {
 		if ('window' in globalThis && 'location' in window) {
-			const searchParams = new URLSearchParams();
+			const searchParams = new URLSearchParams(window.location.search);
 			if (filter) searchParams.set('f', filter);
 			if (search) searchParams.set('s', search);
 			if (includeGlyph) searchParams.set('ig', 'true');
