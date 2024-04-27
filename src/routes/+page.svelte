@@ -1,8 +1,8 @@
 <script lang='ts'>
 	import { categories, glyphs } from '$lib/glyphs';
-	import type { Dialect, GlyphRepr, Glyphs } from '$lib/types';
+	import type { GlyphRepr, Glyphs } from '$lib/types';
 	import { id, query } from '$lib/query';
-  import { Button, Input, Table } from '@sveltestrap/sveltestrap';
+  import { Input, Table } from '@sveltestrap/sveltestrap';
 	import { onMount } from 'svelte';
 
 	let filter: string = '';
@@ -10,6 +10,29 @@
 	let includeGlyph: boolean = true;
 	let includeName: boolean = true;
 	let includeDesc: boolean = false;
+
+	onMount(() => {
+		const searchParams = new URLSearchParams(window.location.search);
+		if (searchParams.has('f')) filter = searchParams.get('f')!;
+		if (searchParams.has('s')) search = searchParams.get('s')!;
+		includeGlyph = searchParams.get('ig') === 'true';
+		includeName = searchParams.get('in') === 'true';
+		includeDesc = searchParams.get('id') === 'true';
+	});
+
+	$: {
+		if ('window' in globalThis) {
+			const searchParams = new URLSearchParams(window.location.search);
+			if (filter) searchParams.set('f', filter);
+			if (search) searchParams.set('s', search);
+			if (includeGlyph) searchParams.set('ig', 'true');
+			if (includeName) searchParams.set('in', 'true');
+			if (includeDesc) searchParams.set('id', 'true');
+			const url = new URL(window.location.href);
+			url.search = searchParams.toString();
+			window.history.replaceState({}, '', url.toString());
+		}
+	}
 
 	const flatGlyphs = glyphs.glyphs.flatMap(g =>
 		g.meanings
