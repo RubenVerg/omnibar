@@ -171,7 +171,7 @@ export const glyphs: Glyphs = {
 		gradeUp: me([My], ['Grade Up'], 'Indices that sort the argument in ascending order', { wiki: 'https://aplwiki.com/wiki/Grade' }),
 		gradeDown: me([My], ['Grade Down'], 'Indices that sort the argument in descending order', { wiki: 'https://aplwiki.com/wiki/Grade' }),
 		gradeUpD: me([xDy], ['Dyadic Grade Up'], 'Indices that sort the right argument in ascending order, according to the left argument', { wiki: 'https://aplwiki.com/wiki/Grade' }),
-		gradeDownD: me([xDy], ['Dyadic Grade Up'], 'Indices that sort the right argument in descending order, according to the left argument', { wiki: 'https://aplwiki.com/wiki/Grade' }),
+		gradeDownD: me([xDy], ['Dyadic Grade Down'], 'Indices that sort the right argument in descending order, according to the left argument', { wiki: 'https://aplwiki.com/wiki/Grade' }),
 		indexGeneratorR: me([My], ['Index Generator (Range)', 'Iota', 'Indices', 'Range'], 'Numbers in range defined by the argument', { wiki: 'https://aplwiki.com/wiki/Index_Generator' }),
 		indexGeneratorI: me([My], ['Index Generator (Indices)', 'Iota', 'Indices', 'Range'], 'Indices with shape specified by the argument', { wiki: 'https://aplwiki.com/wiki/Index_Generator' }),
 		indexOf: me([xDy], ['Index Of'], undefined, { wiki: 'https://aplwiki.com/wiki/Index_Of' }),
