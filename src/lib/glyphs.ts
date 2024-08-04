@@ -500,10 +500,9 @@ export const glyphs: Glyphs = {
 		gl('⍣', ['repeat', dy, ex, vi, dz, n2, ng, ka, al, co, na], ['until', dy, ex, vi, dz, n2, ng, ka, al, co]),
 		gl('⍡', ['cumulativeRepeat', dz], ['convolution', n2, na]),
 		gl('.', ['innerProduct', dy, ex, vi, dz, n2, a2, gn, i1, i2, ax, ng, ka, aw, th, sv, al, co, sa, a6, ap, na], ['alternant', n2, sa], ['member', dy, ex, vi, dz, gn, aw, co, a6], ['decimal', dy, ex, vi, dz, n2, a2, gn, i1, i2, ax, ng, ka, aw, th, sv, al, co, sa, a6], ['tie', sa], ['repeat', sa]),
-		gl('∙', ['innerProduct', ex], ['alternant', ex]),
-		gl('•', ['innerProduct', ka]),
+		gl('∙', ['innerProduct', ex, ka], ['alternant', ex]),i
 		gl('∘.', ['outerProduct', dy, ex, vi, dz, n2, a2, gn, i1, i2, ax, ng, ka, aw, th, sv, al, co, sa, a6, ap, na], ['functionTable', na]),
-		gl('∘•', ['outerProduct', ka]),
+		gl('∘∙', ['outerProduct', ka]),
 		gl('∘', ['compose', dy, ex, vi, dz, n2, ng, al, co, na], ['after', dy, ex, vi, dz, n2, ng, ka, al, co, na], ['bind', dy, ex, vi, dz, n2, ng, al, co, na], ['matrixProduct', gn], ['withe', ka]),
 		gl('⍛', ['before', ex, vi, dz, ka, al]),
 		gl('⍤', ['compose', dy, ex, vi, dz, n2, al, co, sa], ['atop', dy, ex, vi, dz, n2, al, co], ['atRank', dy, ex, vi, n2, gn, i2, ka, al, co, sa], ['over', sa], ['cut', sa]),
