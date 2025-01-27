@@ -5,11 +5,13 @@
   import { Input, Table } from '@sveltestrap/sveltestrap';
 	import { onMount } from 'svelte';
 
+	let canSet: boolean = false;
 	let filter: string = '';
 	let search: string = '';
 	let includeGlyph: boolean = true;
 	let includeName: boolean = true;
 	let includeDesc: boolean = false;
+	let showHidden: boolean = false;
 
 	onMount(() => {
 		const searchParams = new URLSearchParams(window.location.search);
@@ -18,16 +20,25 @@
 		includeGlyph = searchParams.get('ig') === 'true';
 		includeName = searchParams.get('in') === 'true';
 		includeDesc = searchParams.get('id') === 'true';
+		showHidden = searchParams.get('hid') === 'true';
+		canSet = true;
 	});
 
 	$: {
-		if ('window' in globalThis && 'location' in window) {
+		if (canSet && 'window' in globalThis && 'location' in window) {
 			const searchParams = new URLSearchParams(window.location.search);
-			if (filter) searchParams.set('f', filter);
-			if (search) searchParams.set('s', search);
-			if (includeGlyph) searchParams.set('ig', 'true');
-			if (includeName) searchParams.set('in', 'true');
-			if (includeDesc) searchParams.set('id', 'true');
+			if (filter)
+				searchParams.set('f', filter);
+			else
+				searchParams.delete('f');
+			if (search)
+				searchParams.set('s', search);
+			else
+				searchParams.delete('s');
+			searchParams.set('ig', includeGlyph.toString());
+			searchParams.set('in', includeName.toString());
+			searchParams.set('id', includeDesc.toString());
+			searchParams.set('hid', showHidden.toString());
 			const url = new URL(window.location.href);
 			url.search = searchParams.toString();
 			window.history.replaceState({}, '', url.toString());
@@ -117,10 +128,10 @@
 		return [...pattern ?? ''].find(_ => 'A' <= _ && _ <= 'Z')?.toLowerCase?.() as keyof typeof categories ?? 's';
 	}
 
-	function filteredGlyphs(glyphs: Glyphs, filter: string): Glyphs {
+	function filteredGlyphs(glyphs: Glyphs, filter: string, hidden: boolean): Glyphs {
 		const withId = glyphs.glyphs.map(glyph => ({ ...glyph, meanings: glyph.meanings.map(meaning => [id(glyph, meaning), meaning] as const) }));
 		const q = query(filter);
-		return { ...glyphs, glyphs: withId.map(glyph => ({ ...glyph, meanings: glyph.meanings.filter(([id]) => q.includes(id)).map(([id, meaning]) => meaning) })).filter(glyph => glyph.meanings.length) };
+		return { ...glyphs, glyphs: withId.map(glyph => ({ ...glyph, meanings: glyph.meanings.filter(([id, mns]) => q.includes(id) && mns[1].some(dl => hidden || !glyphs.dialects[dl].hidden)).map(([id, meaning]) => meaning) })).filter(glyph => glyph.meanings.length) };
 	}
 
 	function searchedGlyphs(glyphs: Glyphs, search: string, includeGlyph: boolean, includeName: boolean, includeDesc: boolean): Glyphs {
@@ -156,6 +167,7 @@
 		Many dialects call the same primitive different names; in this list they are all grouped under a common name.
 		<!-- svelte-ignore a11y-invalid-attribute -->
 		You can also <a href='#' on:click={download}><i class='bi bi-download me-1' />Download a JSON file</a> that contains all glyphs and meanings.
+		Clicking on "Show hidden languages" shows glyphs and meanings for languages that aren't properly APL dialects.
 	</div>
 
 	<div class='d-flex justify-content-center my-2'>
@@ -173,12 +185,20 @@
 	</p>
 
 	<div class='row'>
-		{#each Object.values(glyphs.dialects) as { name, shortName }}
-			<!-- svelte-ignore a11y-click-events-have-key-events -->
-			<!-- svelte-ignore a11y-no-static-element-interactions -->
-			<span class='d-inline-block col-auto' on:click={() => filter = shortName}>
-				<span class='badge border me-1 border-secondary text-secondary bg-secondary-subtle'>{shortName}</span> {name} <span class='me-2' />
-			</span>
+		<div class='col-2'>
+			<Input type='checkbox' id='showHidden' label={`Show ${Object.values(glyphs.dialects).filter(({ hidden }) => hidden).length} hidden languages`} on:input={() => { showHidden = !showHidden; }} />
+		</div>
+	</div>
+
+	<div class='row'>
+		{#each Object.values(glyphs.dialects) as { name, shortName, hidden }}
+			{#if showHidden || !hidden}
+				<!-- svelte-ignore a11y-click-events-have-key-events -->
+				<!-- svelte-ignore a11y-no-static-element-interactions -->
+				<span class='d-inline-block col-auto' on:click={() => filter = shortName}>
+					<span class='badge border me-1 border-secondary text-secondary bg-secondary-subtle'>{shortName}</span> {name} <span class='me-2' />
+				</span>
+			{/if}
 		{/each}
 	</div>
 
@@ -228,7 +248,7 @@
 		</thead>
 		<tbody>
 			{#key includeGlyph}{#key includeName}{#key includeDesc}
-			{#each searchedGlyphs(filteredGlyphs(glyphs, filter), search, includeGlyph, includeName, includeDesc).glyphs as { glyph, meanings }}
+			{#each searchedGlyphs(filteredGlyphs(glyphs, filter, showHidden), search, includeGlyph, includeName, includeDesc).glyphs as { glyph, meanings }}
 				{#each meanings.entries() as [idx, [meaning, dialects]]}
 					{@const category = patternToCategory(glyphs.meanings[meaning]?.patterns?.[0] ?? '')}
 					<tr>
@@ -264,7 +284,9 @@
 						</td>
 						<td>
 							{#each dialects as dialect}
-								<abbr title={glyphs.dialects[dialect]?.name} class='badge border me-1 border-secondary text-secondary bg-secondary-subtle'>{glyphs.dialects[dialect]?.shortName}</abbr>
+								{#if showHidden || !glyphs.dialects[dialect].hidden}
+									<abbr title={glyphs.dialects[dialect]?.name} class='badge border me-1 border-secondary text-secondary bg-secondary-subtle'>{glyphs.dialects[dialect]?.shortName}</abbr>
+								{/if}
 							{/each}
 						</td>
 					</tr>
@@ -277,11 +299,11 @@
 
 <style>
 	@font-face {
-		font-family: APL386;
-		src: url("/APL386.ttf");
+		font-family: TinyAPL386;
+		src: url("/TinyAPL386.ttf");
 	}
 	:root {
-		--bs-font-monospace: APL386, 'BQN386 Unicode', APL385, APL333, 'Fira Code', monospace !important;
+		--bs-font-monospace: TinyAPL386, 'TinyAPL386 Unicode', 'BQN386 Unicode', APL385, APL333, 'Fira Code', monospace !important;
 	}
 
 	tbody th code {

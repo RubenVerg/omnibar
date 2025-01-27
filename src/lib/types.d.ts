@@ -8,6 +8,7 @@ export interface Glyphs {
 export interface Dialect {
 	name: string;
 	shortName: string;
+	hidden?: boolean;
 }
 
 export interface Url {
