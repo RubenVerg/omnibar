@@ -17,10 +17,10 @@
 		const searchParams = new URLSearchParams(window.location.search);
 		if (searchParams.has('f')) filter = searchParams.get('f')!;
 		if (searchParams.has('s')) search = searchParams.get('s')!;
-		includeGlyph = searchParams.get('ig') === 'true';
-		includeName = searchParams.get('in') === 'true';
-		includeDesc = searchParams.get('id') === 'true';
-		showHidden = searchParams.get('hid') === 'true';
+		if (searchParams.has('ig')) includeGlyph = searchParams.get('ig') === 'true';
+		if (searchParams.has('in')) includeName = searchParams.get('in') === 'true';
+		if (searchParams.has('id')) includeDesc = searchParams.get('id') === 'true';
+		if (searchParams.has('hid')) showHidden = searchParams.get('hid') === 'true';
 		canSet = true;
 	});
 
@@ -186,7 +186,7 @@
 
 	<div class='row'>
 		<div class='col-2'>
-			<Input type='checkbox' id='showHidden' label={`Show ${Object.values(glyphs.dialects).filter(({ hidden }) => hidden).length} hidden languages`} on:input={() => { showHidden = !showHidden; }} />
+			<Input type='checkbox' id='showHidden' label={`Show ${Object.values(glyphs.dialects).filter(({ hidden }) => hidden).length} hidden languages`} bind:checked={showHidden} />
 		</div>
 	</div>
 
@@ -210,13 +210,13 @@
 			<Input type='text' id='search' bind:value={search} />
 		</div>
 		<div class='col-2'>
-			<Input type='checkbox' id='includeGlyph' label='Include glyph' checked on:input={() => { includeGlyph = !includeGlyph; }} />
+			<Input type='checkbox' id='includeGlyph' label='Include glyph' bind:checked={includeGlyph} />
 		</div>
 		<div class='col-2'>
-			<Input type='checkbox' id='includeName' label='Include name' checked on:input={() => { includeName = !includeName; }} />
+			<Input type='checkbox' id='includeName' label='Include name' bind:checked={includeName} />
 		</div>
 		<div class='col-2'>
-			<Input type='checkbox' id='includeDesc' label='Include description' on:input={() => { includeDesc = !includeDesc; }} />
+			<Input type='checkbox' id='includeDesc' label='Include description' bind:checked={includeDesc} />
 		</div>
 	</div>
 
