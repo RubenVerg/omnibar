@@ -12,6 +12,7 @@
 	let includeName: boolean = true;
 	let includeDesc: boolean = false;
 	let showHidden: boolean = false;
+	let showCategories = Object.fromEntries(Object.keys(categories).map(c => [c, true]));
 
 	onMount(() => {
 		const searchParams = new URLSearchParams(window.location.search);
@@ -21,24 +22,20 @@
 		if (searchParams.has('in')) includeName = searchParams.get('in') === 'true';
 		if (searchParams.has('id')) includeDesc = searchParams.get('id') === 'true';
 		if (searchParams.has('hid')) showHidden = searchParams.get('hid') === 'true';
+		for (const h of searchParams.getAll('hc')) showCategories[h] = false;
 		canSet = true;
 	});
 
 	$: {
 		if (canSet && 'window' in globalThis && 'location' in window) {
-			const searchParams = new URLSearchParams(window.location.search);
-			if (filter)
-				searchParams.set('f', filter);
-			else
-				searchParams.delete('f');
-			if (search)
-				searchParams.set('s', search);
-			else
-				searchParams.delete('s');
+			const searchParams = new URLSearchParams();
+			if (filter) searchParams.set('f', filter);
+			if (search) searchParams.set('s', search);
 			searchParams.set('ig', includeGlyph.toString());
 			searchParams.set('in', includeName.toString());
 			searchParams.set('id', includeDesc.toString());
 			searchParams.set('hid', showHidden.toString());
+			for (const [k, v] of Object.entries(showCategories)) if (!v) searchParams.append('hc', k);
 			const url = new URL(window.location.href);
 			url.search = searchParams.toString();
 			window.history.replaceState({}, '', url.toString());
@@ -128,10 +125,10 @@
 		return [...pattern ?? ''].find(_ => 'A' <= _ && _ <= 'Z')?.toLowerCase?.() as keyof typeof categories ?? 's';
 	}
 
-	function filteredGlyphs(glyphs: Glyphs, filter: string, hidden: boolean): Glyphs {
+	function filteredGlyphs(glyphs: Glyphs, filter: string, hidden: boolean, hiddenCategories: string[]): Glyphs {
 		const withId = glyphs.glyphs.map(glyph => ({ ...glyph, meanings: glyph.meanings.map(meaning => [id(glyph, meaning), meaning] as const) }));
 		const q = query(filter);
-		return { ...glyphs, glyphs: withId.map(glyph => ({ ...glyph, meanings: glyph.meanings.filter(([id, mns]) => q.includes(id) && mns[1].some(dl => hidden || !glyphs.dialects[dl].hidden)).map(([id, meaning]) => meaning) })).filter(glyph => glyph.meanings.length) };
+		return { ...glyphs, glyphs: withId.map(glyph => ({ ...glyph, meanings: glyph.meanings.filter(([id, mns]) => q.includes(id) && mns[1].some(dl => hidden || !glyphs.dialects[dl].hidden) && (glyphs.meanings[mns[0]].patterns ?? [undefined])!.every(pat => !hiddenCategories.includes(patternToCategory(pat)))).map(([id, meaning]) => meaning) })).filter(glyph => glyph.meanings.length) };
 	}
 
 	function searchedGlyphs(glyphs: Glyphs, search: string, includeGlyph: boolean, includeName: boolean, includeDesc: boolean): Glyphs {
@@ -168,11 +165,17 @@
 		<!-- svelte-ignore a11y-invalid-attribute -->
 		You can also <a href='#' on:click={download}><i class='bi bi-download me-1' />Download a JSON file</a> that contains all glyphs and meanings.
 		Clicking on "Show hidden languages" shows glyphs and meanings for languages that aren't properly APL dialects.
+		Clicking on a category disables entries of that category.
 	</div>
 
 	<div class='d-flex justify-content-center my-2'>
-		{#each Object.values(categories) as { name, bgColor }}
-			<span class='d-inline-block p-2 mx-1' style={`background-color: ${bgColor};`}>{name}</span>
+		{#each Object.entries(categories) as [key, { name, bgColor, fgColor }]}
+			<button
+				type='button'
+				class='d-inline-block p-2 mx-1'
+				style={showCategories[key] ? `background-color: ${bgColor};` : `border: 2px dashed ${fgColor};`}
+				on:click={() => showCategories[key] = !showCategories[key]}
+			>{name}</button>
 		{/each}
 	</div>
 
@@ -248,7 +251,7 @@
 		</thead>
 		<tbody>
 			{#key includeGlyph}{#key includeName}{#key includeDesc}
-			{#each searchedGlyphs(filteredGlyphs(glyphs, filter, showHidden), search, includeGlyph, includeName, includeDesc).glyphs as { glyph, meanings }}
+			{#each searchedGlyphs(filteredGlyphs(glyphs, filter, showHidden, Object.entries(showCategories).flatMap(([k, v]) => v ? [] : [k])), search, includeGlyph, includeName, includeDesc).glyphs as { glyph, meanings }}
 				{#each meanings.entries() as [idx, [meaning, dialects]]}
 					{@const category = patternToCategory(glyphs.meanings[meaning]?.patterns?.[0] ?? '')}
 					<tr>
