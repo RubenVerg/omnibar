@@ -69,7 +69,7 @@ export const glyphs: Glyphs = {
 		add: me([xDy], ['Addition', 'Sum', 'Plus'], undefined, { wiki: 'https://aplwiki.com/wiki/Add' }),
 		plusId: me([My], ['Identity', 'Plus Identity'], undefined, { wiki: 'https://aplwiki.com/wiki/Conjugate' }),
 		neg: me([My], ['Negate', 'Negation', 'Invert', 'Inverse', 'Opposite'], undefined, { wiki: 'https://aplwiki.com/wiki/Negate' }),
-		sub: me([My], ['Subtraction', 'Minus', 'Difference'], undefined, { wiki: 'https://aplwiki.com/wiki/Subtract' }),
+		sub: me([xDy], ['Subtraction', 'Minus', 'Difference'], undefined, { wiki: 'https://aplwiki.com/wiki/Subtract' }),
 		flipLetterCase: me([My], ['Flip Letter Case'], undefined, { gh: 'https://github.com/abrudz/dyalog-apl-extended/tree/master#user-content-minus' }),
 		sign: me([My], ['Signum', 'Sign', 'Trend'], undefined, { wiki: 'https://aplwiki.com/wiki/Signum' }),
 		dir: me([My], ['Direction', 'Signum', 'Sign', 'Trend'], 'Complex signum', { wiki: 'https://aplwiki.com/wiki/Signum' }),
