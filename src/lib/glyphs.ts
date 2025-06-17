@@ -561,7 +561,7 @@ export const glyphs: Glyphs = {
 		gl('⍲', ['nand', dy, ex, vi, dz, n2, a2, gn, i1, i2, ax, ng, ka, aw, th, sv, al, co, sa, a6, na, ty], ['notAnyEqualToType', ex], ['notAll', dz]),
 		gl('↑', ['mix', dy, ex, vi, dz, ng, al, co, na, ty], ['take', dy, ex, vi, dz, n2, a2, gn, i1, i2, ax, ng, ka, aw, th, sv, al, co, sa, a6, ap, na, bq, ty], ['first', n2, a2, gn, i2, ax, ka, aw, a6], ['nub', sa], ['raise', ap], ['prefixes', bq]),
 		gl('↓', ['split', dy, ex, vi, dz, ng, al, co, na], ['drop', dy, ex, vi, dz, n2, a2, gn, i1, i2, ax, ng, ka, aw, th, sv, al, co, sa, a6, ap, na, bq, ty], ['dropFirst', ka], ['join', sa], ['print', ap], ['suffixes', bq], ['majorCells', ty]),
-		gl('⊂', ['enclose', dy, ex, vi, dz, n2, a2, gn, i2, ax, ng, ka, aw, al, co, a6, na, ty], ['penclose', dy, ex, vi, dz, ng, al, co, na, ty], ['partition', n2, a2, ax, ka, aw, a6], ['duplicate', sa], ['commute', sa], ['apPartition', ap], ['partitionCount', ap]),
+		gl('⊂', ['enclose', dy, ex, vi, dz, n2, a2, gn, i2, ax, ng, ka, aw, al, co, a6, na, ty], ['penclose', dy, ex, vi, dz, n2, al, co, na, ty], ['partition', a2, gn, ax, ng, ka, aw, a6], ['duplicate', sa], ['commute', sa], ['apPartition', ap], ['partitionCount', ap]),
 		gl('⊃', ['first', dy, ex, vi, dz, ng, al, co, na, ty], ['pick', dy, ex, vi, dz, n2, a2, gn, i2, ax, ng, ka, aw, al, co, a6, ap, na], ['mix', n2, a2, gn, i2, ax, ka, aw, a6], ['nest', sa], ['link', sa], ['join', ap]),
 		gl('⊏', ['createFnRef', ty], ['firstCell', bq], ['from', bq]),
 		gl('⊑', ['first', bq], ['pick', bq]),
