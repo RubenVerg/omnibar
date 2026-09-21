@@ -5,6 +5,8 @@
 	import seed from 'seed-random';
 	import { onMount } from 'svelte';
 
+	const [guesses, guessesStr] = [8, 'eight'];
+
 	const today = new Date(new Date().toUTCString()).toISOString().split('T')[0];
 	const random = seed(today);
 
@@ -88,7 +90,7 @@
 	}
 
 	async function copyResults() {
-		const string = `APLe ${today} – ${won ? previous.length : 'X'}/6
+		const string = `APLe ${today} – ${won ? previous.length : 'X'}/${guesses}
 ${previous.map(v => v.length === 2 ? v[0] === key ? '⭐' : '⬛' : results[v[2]].emoji).join('')}
 https://omnibar.rubenverg.com/aple`;
 		await navigator.clipboard.writeText(string);
@@ -103,7 +105,7 @@ https://omnibar.rubenverg.com/aple`;
 	<h1>APLe</h1>
 
 	<div>
-		Every day, a different APL dialect (which appears in <a href='/'>Omnibar</a>) is chosen at random. You can guess six glyph and primitive combinations, and you will receive one the following pieces of information:
+		Every day, a different APL dialect (which appears in <a href='/'>Omnibar</a>) is chosen at random. You can guess glyph and primitive combinations, and you will receive one the following pieces of information:
 
 		<ul>
 			<li><span style={`background-color: ${results.n.color};`} class='font-monospace'>{results.n.letter}</span> The primitive does not appear in the dialect</li>
@@ -111,7 +113,7 @@ https://omnibar.rubenverg.com/aple`;
 			<li><span style={`background-color: ${results.g.color};`} class='font-monospace'>{results.g.letter}</span> The primitive appears in the dialect with this glyph</li>
 		</ul>
 
-		At any point, you can instead guess what dialect you think has been selected today. These are included in your six guesses.
+		At any point, you can instead guess what dialect you think has been selected today. In total, you have {guessesStr} available guesses.
 	</div>
 
 	<Table class='d-inline-block'>
@@ -161,7 +163,7 @@ https://omnibar.rubenverg.com/aple`;
 		</tbody>
 	</Table>
 
-	{#if !won && previous.length < 6}
+	{#if !won && previous.length < guesses}
 		<form autocomplete='off' on:submit|preventDefault={() => {}}>
 			<Input id='search' type='text' placeholder='Search for a primitive…' bind:value={search} on:input={suggest} />
 
