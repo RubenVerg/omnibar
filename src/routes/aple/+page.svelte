@@ -12,7 +12,7 @@
 
 	const [key, dialect] = dialects[Math.floor(random() * dialects.length)];
 
-	const allMeanings = Object.keys(glyphs.meanings).filter(k => Object.values(glyphs.glyphs).some(gl => gl.meanings.some(m => m[1].includes(k))));
+	const allMeanings = Object.keys(glyphs.meanings).filter(k => Object.values(glyphs.glyphs).some(gl => gl.meanings.some(m => m[0] === k && m[1].includes(key))));
 
 	const results = {
 		n: { color: '#ffadad', letter: 'N', emoji: '🟥' },
