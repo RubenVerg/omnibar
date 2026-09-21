@@ -15,9 +15,9 @@
 	const allMeanings = Object.keys(glyphs.meanings).filter(k => Object.values(glyphs.glyphs).some(gl => gl.meanings.some(m => m[1].includes(k))));
 
 	const results = {
-		n: { color: '#ffadad', letter: 'N', emoji: '🟥️' },
-		p: { color: '#fdffb6', letter: 'P', emoji: '🟨️' },
-		g: { color: '#caffbf', letter: 'G', emoji: '🟩️' },
+		n: { color: '#ffadad', letter: 'N', emoji: '🟥' },
+		p: { color: '#fdffb6', letter: 'P', emoji: '🟨' },
+		g: { color: '#caffbf', letter: 'G', emoji: '🟩' },
 	} as const;
 
 	type Result = keyof typeof results;
@@ -89,7 +89,7 @@
 
 	async function copyResults() {
 		const string = `APLe ${today} – ${won ? previous.length : 'X'}/6
-${previous.map(v => v.length === 2 ? v[0] === key ? '⭐️' : '⬛️' : results[v[2]].emoji).join('')}
+${previous.map(v => v.length === 2 ? v[0] === key ? '⭐' : '⬛' : results[v[2]].emoji).join('')}
 https://omnibar.rubenverg.com/aple`;
 		await navigator.clipboard.writeText(string);
 	}
