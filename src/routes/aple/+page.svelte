@@ -51,9 +51,10 @@
 			glyph: g.glyph,
 			patterns: m.patterns!,
 			names: m.names,
-			dialects: g.meanings[idx][1].map(_ => glyphs.dialects[_].shortName),
+			dialects: g.meanings[idx][1],
 		}))
-		.filter(t => t.patterns !== undefined && t.patterns.length > 0 && patternToCategory(t.patterns[0]) !== 's'));
+		.filter(t => t.patterns !== undefined && t.patterns.length > 0 && patternToCategory(t.patterns[0]) !== 's'))
+		.filter(t => t.dialects.some(d => !(glyphs.dialects[d].hidden ?? false)));
 
 	function suggest() {
 		suggestions = search.trim() === '' ? [] : [
