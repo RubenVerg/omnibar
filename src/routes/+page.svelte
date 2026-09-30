@@ -45,14 +45,15 @@
 	const flatGlyphs = glyphs.glyphs.flatMap(g =>
 		g.meanings
 			.map(_ => _[0])
-			.map(_ => glyphs.meanings[_])
-			.map((m, idx) => [
+			.map(_ => [_, glyphs.meanings[_]] as const)
+			.map(([k, m], idx) => [
 				g.glyph,
 				m.patterns,
 				m.names[0],
 				m.description ?? '',
 				Object.values(m.urls ?? {}),
 				g.meanings[idx][1].map(_ => glyphs.dialects[_].shortName),
+				k,
 			])
 	);
 
